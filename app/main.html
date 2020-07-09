@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<!--create by ANATOLY KUZNETSOV-->
+<!--contact mail:kuznecovs45@gmail.com skype:an_kuznetcov-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <!--colors-tabs-->
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <!--SEO-->
+    <title>Document</title>
+    <meta name="description" itemprop="description" content="" />
+    <!--build:css ./css/vendor.css-->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="bower/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="bower/jquery-nice-select/css/nice-select.css" />
+    <!--link(rel="stylesheet", href="bower/flexboxgrid/dist/flexboxgrid.min.css")-->
+    <!--link(rel="stylesheet", href="bower/ion.rangeSlider/css/ion.rangeSlider.css")-->
+    <!--endbuild-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-edit.css" />
+</head>
+
+<body>
+    <div class="page">
+        <!--block header-->
+        <div class="header-wrap header-wrap--main">
+            <div class="main-cont">
+                <div class="header">
+                    <a class="logo logo--main" href="#">
+                        <img src="img/logo-main.svg" alt="" />
+                    </a>
+                    <a class="logo logo--sm" href="#">
+                        <img src="img/logo-line.svg" alt="" />
+                    </a>
+                    <div class="header-nav">
+                        <div class="header-nav__el header-nav__el--sub">
+                            <div class="header-nav__el-title">Посёлки</div>
+                            <div class="header-nav__drop">
+                                <a class="header-nav__drop-el" href="#">Все посёлки</a>
+                                <a class="header-nav__drop-el" href="#">Ускуля</a>
+                                <a class="header-nav__drop-el" href="#">Елагино</a>
+                                <a class="header-nav__drop-el" href="#">Южные просторы</a>
+                            </div>
+                        </div>
+                        <div class="header-nav__el header-nav__el--sub">
+                            <div class="header-nav__el-title">Проекты домов</div>
+                            <div class="header-nav__drop">
+                                <a class="header-nav__drop-el" href="#">Все посёлки</a>
+                                <a class="header-nav__drop-el" href="#">Ускуля</a>
+                                <a class="header-nav__drop-el" href="#">Елагино</a>
+                                <a class="header-nav__drop-el" href="#">Южные просторы</a>
+                            </div>
+                        </div>
+                        <div class="header-nav__el header-nav__el--sub">
+                            <div class="header-nav__el-title">Готовые предложения</div>
+                            <div class="header-nav__drop">
+                                <a class="header-nav__drop-el" href="#">Все посёлки</a>
+                                <a class="header-nav__drop-el" href="#">Ускуля</a>
+                                <a class="header-nav__drop-el" href="#">Елагино</a>
+                                <a class="header-nav__drop-el" href="#">Южные просторы</a>
+                            </div>
+                        </div>
+                        <div class="header-nav__el">
+                            <a class="header-nav__el-title" href="#">Условия покупки</a>
+                        </div>
+                        <div class="header-nav__el">
+                            <a class="header-nav__el-title" href="#">О компании</a>
+                        </div>
+                    </div>
+                    <div class="header-contact">
+                        <a class="phone" href="tel:+7(812)467 45 17">
+                            <span>+7 (812)&nbsp;</span>467 45 17</a>
+                        <div class="callback">
+                            <div class="callback-icon"></div>
+                            <span>Заказать звонок</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--block header end-->
+        <div class="main-slider">
+            <div class="main-slider__el" style="background-image:url('img/slide-1.jpg')">
+                <div class="main-slider-info">
+                    <div class="main-cont">
+                        <div class="slider-banner msg-box">
+                            <h1 class="slider-banner__title">Коттеджный поселок «ЕЛАГИНО»</h1>
+                            <div class="slider-banner__text">идеальное место для тех, кто хочет жить рядом с городом, вдали от суеты, имея возможность быстро добраться до него в любой момент</div>
+                            <div class="btn--md btn--mark">Выбрать участок</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider__el" style="background-image:url('img/slide-3.jpg')">
+                <div class="main-slider-info">
+                    <div class="main-cont">
+                        <div class="slider-banner slider-banner--lg">
+                            <div class="slider-banner__title">Фильм о жизни в нашем поселке</div>
+                            <a class="btn--md btn--mark fancybox" href="https://youtu.be/t8VcBdgGNco">Смотреть видео</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider__el" style="background-image:url('img/slide-5.jpg')"></div>
+        </div>
+        <div class="content">
+            <div class="main-cont">
+                <div class="title title--lg">Наши посёлки</div>
+                <!--items slider-->
+                <div class="slider-wrap slider-wrap--simple">
+                    <div class="slider-control slider-control--left">
+                        <svg class="icon">
+                            <use xlink:href="#arrow-left"></use>
+                        </svg>
+                    </div>
+                    <div class="slider-control slider-control--right">
+                        <svg class="icon">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                    <div class="slider-example slider-item">
+                        <div class="slider-el">
+                            <div class="row row-2">
+                                <div class="col">
+                                    <div class="box-img border border--bottom" style="background-image:url('img/village-1.jpg')"></div>
+                                </div>
+                                <div class="col">
+                                    <div class="slider-example__wrap">
+                                        <div class="slider-example-info">
+                                            <div class="title title--md link">Ускуля</div>
+                                            <div class="position">
+                                                <svg class="icon icon--sm">
+                                                    <use xlink:href="#placeholder"></use>
+                                                </svg>
+                                                <span>Ломоносовский район, деревня Ускуля / 3 км от города</span>
+                                            </div>
+                                            <div class="slider-example__text">Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, школа верховой езды.</div>
+                                        </div>
+                                        <div class="slider-example-img">
+                                            <div class="row row-2">
+                                                <div class="card">
+                                                    <a class="fancybox card__img" href="img/item-1.jpg" style="background-image:url('img/item-1.jpg')"></a>
+                                                    <a class="card-name link" href="#">Оланд</a>
+                                                </div>
+                                                <div class="card">
+                                                    <a class="fancybox card__img" href="img/item-1.jpg" style="background-image:url('img/item-2.jpg')"></a>
+                                                    <a class="card-name link" href="#">Барнхауз</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-el">
+                            <div class="row row-2">
+                                <div class="col">
+                                    <div class="box-img border border--bottom" style="background-image:url('img/village-1.jpg')"></div>
+                                </div>
+                                <div class="col">
+                                    <div class="slider-example__wrap">
+                                        <div class="slider-example-info">
+                                            <div class="title title--md link">Ускуля</div>
+                                            <div class="position">
+                                                <svg class="icon icon--sm">
+                                                    <use xlink:href="#placeholder"></use>
+                                                </svg>
+                                                <span>Ломоносовский район, деревня Ускуля / 3 км от города</span>
+                                            </div>
+                                            <div class="slider-example__text">Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, школа верховой езды.</div>
+                                        </div>
+                                        <div class="slider-example-img">
+                                            <div class="row row-2">
+                                                <div class="card">
+                                                    <a class="fancybox card__img" href="img/item-1.jpg" style="background-image:url('img/item-1.jpg')"></a>
+                                                    <a class="card-name link" href="#">Оланд</a>
+                                                </div>
+                                                <div class="card">
+                                                    <a class="fancybox card__img" href="img/item-1.jpg" style="background-image:url('img/item-2.jpg')"></a>
+                                                    <a class="card-name link" href="#">Барнхауз</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-el">
+                            <div class="row row-2">
+                                <div class="col">
+                                    <div class="box-img border border--bottom" style="background-image:url('img/village-1.jpg')"></div>
+                                </div>
+                                <div class="col">
+                                    <div class="slider-example__wrap">
+                                        <div class="slider-example-info">
+                                            <div class="title title--md link">Ускуля</div>
+                                            <div class="position">
+                                                <svg class="icon icon--sm">
+                                                    <use xlink:href="#placeholder"></use>
+                                                </svg>
+                                                <span>Ломоносовский район, деревня Ускуля / 3 км от города</span>
+                                            </div>
+                                            <div class="slider-example__text">Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, школа верховой езды.</div>
+                                        </div>
+                                        <div class="slider-example-img">
+                                            <div class="row row-2">
+                                                <div class="card">
+                                                    <a class="fancybox card__img" href="img/item-1.jpg" style="background-image:url('img/item-1.jpg')"></a>
+                                                    <a class="card-name link" href="#">Оланд</a>
+                                                </div>
+                                                <div class="card">
+                                                    <a class="fancybox card__img" href="img/item-1.jpg" style="background-image:url('img/item-2.jpg')"></a>
+                                                    <a class="card-name link" href="#">Барнхауз</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-el">
+                            <div class="row row-2">
+                                <div class="col">
+                                    <div class="box-img border border--bottom" style="background-image:url('img/village-1.jpg')"></div>
+                                </div>
+                                <div class="col">
+                                    <div class="slider-example__wrap">
+                                        <div class="slider-example-info">
+                                            <div class="title title--md link">Ускуля</div>
+                                            <div class="position">
+                                                <svg class="icon icon--sm">
+                                                    <use xlink:href="#placeholder"></use>
+                                                </svg>
+                                                <span>Ломоносовский район, деревня Ускуля / 3 км от города</span>
+                                            </div>
+                                            <div class="slider-example__text">Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, школа верховой езды.</div>
+                                        </div>
+                                        <div class="slider-example-img">
+                                            <div class="row row-2">
+                                                <div class="card">
+                                                    <a class="fancybox card__img" href="img/item-1.jpg" style="background-image:url('img/item-1.jpg')"></a>
+                                                    <a class="card-name link" href="#">Оланд</a>
+                                                </div>
+                                                <div class="card">
+                                                    <a class="fancybox card__img" href="img/item-1.jpg" style="background-image:url('img/item-2.jpg')"></a>
+                                                    <a class="card-name link" href="#">Барнхауз</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--items slider === end-->
+            </div>
+            <div class="fluid-cont section">
+                <div class="fluid-cont-el fluid-cont-el--sm">
+                    <div class="fluid-cont-wrap">
+                        <div class="title title--lg">Коттеджные посёлки в Ленинградской области</div>
+                        <div class="text">
+                            <p>Мы стояли у истоков формирования земельного рынка Ленинградской области с 2007 года.</p>
+                            <p>Основная сфера деятельности нашей компании – девелопмент: подготовка готовых проектов посёлков и реализация земельных участков c полным комплектом документов.</p>
+                            <p>Мы сформировали ценовую политику, дающую возможность каждому воплотить мечту о загородном доме.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fluid-cont-el">
+                    <a class="fluid-cont-img fancybox" href="https://youtu.be/t8VcBdgGNco" style="background-image:url('img/slide-5.jpg')">
+                        <div class="play">
+                            <svg class="icon">
+                                <use xlink:href="#play"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-cont">
+                <div class="advant section">
+                    <div class="advant__el border border--bottom" style="background-image:url('img/advant-1.jpg')">
+                        <div class="advant__el-title">Собственное производство
+                            <div class="advant__el-title-filter"></div>
+                        </div>
+                    </div>
+                    <div class="advant__el" style="background-image:url('img/advant-2.jpg')">
+                        <div class="advant__el-title">Строительство с 1998 года
+                            <div class="advant__el-title-filter"></div>
+                        </div>
+                    </div>
+                    <div class="advant__el border border--top" style="background-image:url('img/advant-3.jpg')">
+                        <div class="advant__el-title">Собственная сырьевая база
+                            <div class="advant__el-title-filter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-banner" style="background-image:url('img/banner-1.jpg')">
+                <div class="order-banner-wrap">
+                    <div class="order-form msg-box">
+                        <div class="title title--lg">Участок с домом и коммуникациями за 2 400 000 руб.</div>
+                        <div class="input-cont">
+                            <div class="input-row">
+                                <input class="input" type="text" placeholder="Ваше имя" />
+                            </div>
+                        </div>
+                        <div class="input-cont">
+                            <div class="input-row">
+                                <input class="input" type="text" placeholder="Телефон" />
+                            </div>
+                        </div>
+                        <div class="btn--md btn--mark btn--full">Записаться на просмотр</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--block footer-->
+        <!--block footer end-->
+    </div>
+    <!--build:js ./js/combined.js-->
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/slick-carousel/slick/slick.js"></script>
+    <script src="bower/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="bower/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="bower/fancybox/dist/jquery.fancybox.js"></script>
+    <link rel="stylesheet" href="bower/fancybox/dist/jquery.fancybox.css" />
+    <!--script(src="bower/ion.rangeSlider/js/ion.rangeSlider.js")-->
+    <!-- endbuild-->
+    <script src="./js/add-on.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/script-edit.js"></script>
+</body>
+
+</html>

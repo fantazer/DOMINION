@@ -1,0 +1,92 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header("main")
+	.main-slider
+		.main-slider__el(style="background-image:url('img/slide-1.jpg')")
+			.main-slider-info
+				.main-cont
+					.slider-banner.msg-box
+						h1.slider-banner__title Коттеджный поселок «ЕЛАГИНО»
+						.slider-banner__text идеальное место для тех, кто хочет жить рядом с городом, вдали от суеты, имея возможность быстро добраться до него в любой момент
+						.btn--md.btn--mark Выбрать участок
+		.main-slider__el(style="background-image:url('img/slide-3.jpg')")
+			.main-slider-info
+				.main-cont
+					.slider-banner.slider-banner--lg
+						.slider-banner__title Фильм о жизни в нашем поселке
+						a(href="https://youtu.be/t8VcBdgGNco").btn--md.btn--mark.fancybox Смотреть видео
+		.main-slider__el(style="background-image:url('img/slide-5.jpg')")
+	.content
+		.main-cont
+			.title.title--lg Наши посёлки
+			//items slider
+			.slider-wrap.slider-wrap--simple
+				.slider-control.slider-control--left
+					+icon("arrow-left","icon")
+				.slider-control.slider-control--right
+					+icon("arrow-right","icon")
+				.slider-example.slider-item
+					- for (var i=0;i<4;i++)
+						.slider-el
+							.row.row-2
+								.col
+									.box-img.border.border--bottom(style="background-image:url('img/village-1.jpg')")
+								.col
+									.slider-example__wrap
+										.slider-example-info
+											.title.title--md.link Ускуля
+											.position
+												+icon("placeholder","icon icon--sm")
+												span Ломоносовский район, деревня Ускуля / 3 км от города
+											.slider-example__text Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, школа верховой езды.
+										.slider-example-img
+											.row.row-2
+												.card
+													a(href="img/item-1.jpg" style="background-image:url('img/item-1.jpg')").fancybox.card__img
+													a(href="#").card-name.link Оланд
+												.card
+													a(href="img/item-1.jpg" style="background-image:url('img/item-2.jpg')").fancybox.card__img
+													a(href="#").card-name.link Барнхауз
+			//items slider === end
+		.fluid-cont.section
+			.fluid-cont-el.fluid-cont-el--sm
+				.fluid-cont-wrap
+					.title.title--lg Коттеджные посёлки в Ленинградской области
+					.text
+						p Мы стояли у истоков формирования земельного рынка Ленинградской области с 2007 года.
+
+						p Основная сфера деятельности нашей компании – девелопмент: подготовка готовых проектов посёлков и реализация земельных участков c полным комплектом документов.
+
+						p Мы сформировали ценовую политику, дающую возможность каждому воплотить мечту о загородном доме.
+			.fluid-cont-el
+				a(href="https://youtu.be/t8VcBdgGNco" style="background-image:url('img/slide-5.jpg')").fluid-cont-img.fancybox
+					.play
+						+icon("play","icon")
+
+		.main-cont
+			.advant.section
+				.advant__el.border.border--bottom(style="background-image:url('img/advant-1.jpg')")
+					.advant__el-title Собственное производство
+						.advant__el-title-filter
+				.advant__el(style="background-image:url('img/advant-2.jpg')")
+					.advant__el-title Строительство с 1998 года
+						.advant__el-title-filter
+				.advant__el.border.border--top(style="background-image:url('img/advant-3.jpg')")
+					.advant__el-title Собственная сырьевая база
+						.advant__el-title-filter
+
+		.order-banner(style="background-image:url('img/banner-1.jpg')")
+			.order-banner-wrap
+				.order-form.msg-box
+					.title.title--lg Участок с домом и коммуникациями за 2 400 000 руб.
+					.input-cont
+						.input-row
+							input(type="text" placeholder="Ваше имя" class="input")
+					.input-cont
+						.input-row
+							input(type="text" placeholder="Телефон" class="input")
+					.btn--md.btn--mark.btn--full Записаться на просмотр
+	+footer()
+include ./block_html/_script.pug

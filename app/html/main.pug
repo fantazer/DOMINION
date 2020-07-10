@@ -14,10 +14,11 @@ include block_html/_include.pug
 		.main-slider__el(style="background-image:url('img/slide-3.jpg')")
 			.main-slider-info
 				.main-cont
-					.slider-banner.slider-banner--lg
+					.slider-banner.slider-banner--lg.msg-box
 						.slider-banner__title Фильм о жизни в нашем поселке
 						a(href="https://youtu.be/t8VcBdgGNco").btn--md.btn--mark.fancybox Смотреть видео
 		.main-slider__el(style="background-image:url('img/slide-5.jpg')")
+
 	.content
 		.main-cont
 			.title.title--lg Наши посёлки
@@ -27,31 +28,37 @@ include block_html/_include.pug
 					+icon("arrow-left","icon")
 				.slider-control.slider-control--right
 					+icon("arrow-right","icon")
-				.slider-example.slider-item
+				.example.slider-item
 					- for (var i=0;i<4;i++)
 						.slider-el
 							.row.row-2
 								.col
 									.box-img.border.border--bottom(style="background-image:url('img/village-1.jpg')")
 								.col
-									.slider-example__wrap
-										.slider-example-info
+									.example__wrap
+										.example-info
 											.title.title--md.link Ускуля
 											.position
 												+icon("placeholder","icon icon--sm")
 												span Ломоносовский район, деревня Ускуля / 3 км от города
-											.slider-example__text Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, школа верховой езды.
-										.slider-example-img
+											.example__text Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, школа верховой езды.
+										.example-img
 											.row.row-2
 												.card
-													a(href="img/item-1.jpg" style="background-image:url('img/item-1.jpg')").fancybox.card__img
-													a(href="#").card-name.link Оланд
+													a(href="img/slide-3.jpg" style="background-image:url('img/item-1.jpg')").fancybox.card__img
+													.card-name
+														a(href="#").link Оланд
+														span.type--gray 130 м <sup>2</sup></span>
 												.card
-													a(href="img/item-1.jpg" style="background-image:url('img/item-2.jpg')").fancybox.card__img
-													a(href="#").card-name.link Барнхауз
+													a(href="img/slide-4.jpg" style="background-image:url('img/item-2.jpg')").fancybox.card__img
+													.card-name
+														a(href="#").link Барнхауз
+														span.type--gray 130 м <sup>2</sup></span>
 			//items slider === end
+
+		// video block
 		.fluid-cont.section
-			.fluid-cont-el.fluid-cont-el--sm
+			.fluid-cont-el.fluid-cont-el--left
 				.fluid-cont-wrap
 					.title.title--lg Коттеджные посёлки в Ленинградской области
 					.text
@@ -64,7 +71,9 @@ include block_html/_include.pug
 				a(href="https://youtu.be/t8VcBdgGNco" style="background-image:url('img/slide-5.jpg')").fluid-cont-img.fancybox
 					.play
 						+icon("play","icon")
+		// video block === end
 
+		// advant
 		.main-cont
 			.advant.section
 				.advant__el.border.border--bottom(style="background-image:url('img/advant-1.jpg')")
@@ -76,17 +85,44 @@ include block_html/_include.pug
 				.advant__el.border.border--top(style="background-image:url('img/advant-3.jpg')")
 					.advant__el-title Собственная сырьевая база
 						.advant__el-title-filter
+		// advant === end
 
-		.order-banner(style="background-image:url('img/banner-1.jpg')")
-			.order-banner-wrap
-				.order-form.msg-box
-					.title.title--lg Участок с домом и коммуникациями за 2 400 000 руб.
-					.input-cont
-						.input-row
-							input(type="text" placeholder="Ваше имя" class="input")
-					.input-cont
-						.input-row
-							input(type="text" placeholder="Телефон" class="input")
-					.btn--md.btn--mark.btn--full Записаться на просмотр
+		+order()
+
+		// garant
+		.fluid-cont.section
+			.fluid-cont-el
+				.map
+					.map__el
+						//put map her
+			.fluid-cont-el.fluid-cont-el--right
+				.fluid-cont-wrap
+					.border.border--top
+						img(src="img/house-1.jpg", alt="").img
+					.title.title--lg Гарантия 25 лет!
+					.text
+						p Строительство домов - наша профессия! Все работы выполняются на высоком профессиональном уровне.
+						p Каждый этап работы оформляется отдельным официальным договором, гарантия по которому составляет – 25 лет. К каждому клиенту мы относимся с большим уважением и применяем в своей работе только индивидуальный подход.
+		// garant === end
+
+		// works
+		.section
+			.main-cont
+				.title.title--lg Посёлки, которые мы сдаём к <span class="type--green">2022</span>&nbsp;году
+				.row.row-3
+					.unit
+						.unit__img.border.border--top(style="background-image:url('img/house-2.jpg')")
+						a(href="#").unit__title Сойкино
+						.unit__text Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, частный детский сад.
+					.unit
+						.unit__img(style="background-image:url('img/house-3.jpg')")
+						a(href="#").unit__title Кузнецы
+						.unit__text Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, частный детский сад. Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов.
+					.unit
+						.unit__img.border.border--left(style="background-image:url('img/house-4.jpg')")
+						a(href="#").unit__title Царская тропа
+						.unit__text Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи.
+		// works === end
+
 	+footer()
 include ./block_html/_script.pug

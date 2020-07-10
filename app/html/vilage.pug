@@ -1,0 +1,89 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		+bread()
+		.section
+			.main-cont
+				.title.title--lg Наши посёлки
+				.row.row-2
+					.col
+						.box-img.border.border--bottom(style="background-image:url('img/village-1.jpg')")
+					.col
+						.example__wrap
+							.example-info
+								.title.title--md.link Ускуля
+								.position
+									+icon("placeholder","icon icon--sm")
+									span Ломоносовский район, деревня Ускуля / 3 км от города
+								.example__text Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, школа верховой езды.
+							.example-img
+								.row.row-2
+									.card
+										a(href="img/slide-3.jpg" style="background-image:url('img/item-1.jpg')").fancybox.card__img
+										.card-name
+											a(href="#").link Оланд
+											span.type--gray 130 м <sup>2</sup></span>
+									.card
+										a(href="img/slide-4.jpg" style="background-image:url('img/item-2.jpg')").fancybox.card__img
+										.card-name
+											a(href="#").link Барнхауз
+											span.type--gray 130 м <sup>2</sup></span>
+		.section-extend.section--gray
+			.main-cont
+				.row.row-2
+					.col
+						.example__wrap
+							.example-info
+								.title.title--md.link Южные просторы
+								.position
+									+icon("placeholder","icon icon--sm")
+									span Ломоносовский район, деревня Ускуля / 3 км от города
+								.example__text Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, школа верховой езды.
+							.example-img
+								.row.row-2
+									.card
+										a(href="img/slide-3.jpg" style="background-image:url('img/item-1.jpg')").fancybox.card__img
+										.card-name
+											a(href="#").link Оланд
+											span.type--gray 130 м <sup>2</sup></span>
+									.card
+										a(href="img/slide-4.jpg" style="background-image:url('img/item-2.jpg')").fancybox.card__img
+										.card-name
+											a(href="#").link Барнхауз
+											span.type--gray 130 м <sup>2</sup></span>
+
+					.col
+						.box-img.border.border--left(style="background-image:url('img/village-2.jpg')")
+		.section
+			.main-cont
+				.row.row-2
+					.col
+						.box-img.border.border--bottom(style="background-image:url('img/village-3.jpg')")
+					.col
+						.example__wrap
+							.example-info
+								.title.title--md.link Елагино
+								.position
+									+icon("placeholder","icon icon--sm")
+									span Ломоносовский район, деревня Ускуля / 3 км от города
+								.example__text Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, школа верховой езды.
+							.example-img
+								.row.row-2
+									.card
+										a(href="img/slide-3.jpg" style="background-image:url('img/item-1.jpg')").fancybox.card__img
+										.card-name
+											a(href="#").link Оланд
+											span.type--gray 130 м <sup>2</sup></span>
+									.card
+										a(href="img/slide-4.jpg" style="background-image:url('img/item-2.jpg')").fancybox.card__img
+										.card-name
+											a(href="#").link Барнхауз
+											span.type--gray 130 м <sup>2</sup></span>
+
+		+order()
+		+map()
+	+footer()
+include ./block_html/_script.pug

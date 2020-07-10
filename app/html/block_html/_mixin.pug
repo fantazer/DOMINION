@@ -35,3 +35,39 @@ mixin incr(a,type)
         .incr__val-coner
       .incr__plus.incr__nav
         +icon("plus","icon")
+
+mixin bread()
+  .main-cont
+    .bread(typeof='BreadcrumbList' vocab='https://schema.org/')
+      span(property='itemListElement' typeof='ListItem')
+        a(property='item' typeof='WebPage' title='' href='#')
+          span(property='name') Главная
+        meta(property='position' content='1')
+      | /
+      span(property='itemListElement' typeof='ListItem')
+        a(property='item' typeof='WebPage' title='Перейти к архиву рубрики Консилиум.' href='#')
+          span(property='name') Каталог
+        meta(property='position' content='2')
+      | /
+      span Пункт услуги
+
+mixin order()
+  // order-banner
+  .order-banner(style="background-image:url('img/banner-1.jpg')")
+    .order-banner-wrap
+      .order-form.msg-box
+        .msg-box-wrap
+          .title.title--lg Участок с домом и коммуникациями за <span class="type--green">2 400 000 руб</span>.
+          .input-cont
+            .input-row
+              input(type="text" placeholder="Ваше имя" class="input")
+          .input-cont
+            .input-row
+              input(type="text" placeholder="Телефон" class="input")
+          .btn--md.btn--mark.btn--full Записаться на просмотр
+  // order-banner === end
+
+mixin map()
+  .map.map--full
+    .map__el
+      //put map her

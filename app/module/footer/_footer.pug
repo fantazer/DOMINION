@@ -1,3 +1,18 @@
 mixin footer()
 	//block footer
+	.footer-wrap
+		.main-cont
+			.footer
+				.footer-copy Copyright © 2020 - Dominion
+				.footer-adr 190005 Санкт-Петербург, 1-я Красноармейская, д.12, офис 7
+				.footer-phone
+					a(href="tel:+7 (921) 925-30-75") +7 (921) 925-30-75
+					a(href="tel:++7 (812) 467-45-17") +7 (812) 467-45-17
+				a(href="mailto:info@dominion-ltd.ru").footer-mail info@dominion-ltd.ru
+				.soc-row
+					a(href="#").soc-row__el
+						+icon("soc-fb","icon")
+					a(href="#").soc-row__el
+						+icon("soc-inst","icon")
+
 	//block footer end

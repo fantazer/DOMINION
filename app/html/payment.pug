@@ -1,0 +1,109 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		+bread()
+		.main-cont
+			.title.title--lg Покупка недвижимости
+			.text
+				p Мы стремимся к тому, чтобы процесс покупки был максимально комфортным для Вас.
+			.payment-adv
+				-
+					var items = [
+						{icon:"docs--color",text:'Уникальные программы рассрочки'},
+						{icon:"care--color",text:'Удобные условия бронирования'},
+						{icon:"pig--color",text:'Система скидок и акций'},
+						{icon:"bank--color",text:'Партнерские программы с ведущими банками'},
+						{icon:"tools--color",text:'Комплексное сопровождение сделки'},
+						{icon:"famaly--color",text:'Мы работаем с государственными программами поддержки семей'},
+					];
+				each item in items
+					.payment-adv__el
+						svg(class="icon")
+							use(xlink:href="#" + item.icon)
+						span=item.text
+		.section-box.section--gray
+			.main-cont
+				.title.title--md Способы покупки
+				.info
+					.info-col-lg
+						.accordion
+							-
+								var items = [
+									'Платежный план «обмен»',
+									'Бронирование',
+									'Стопроцентная оплата',
+									'Беспроцентная рассрочка',
+									'Переезд в готовый дом',
+									'Ипотека под строительство',
+									'Готовый дом за наш счёт',
+									];
+							each item in items
+								.accordion__el
+									.accordion__el-head
+										.accordion__el-head-text #{item}
+										.accordion__el-head-icon
+									.accordion__el-content.text
+										p Платежный план «переезд в готовый дом» - дает возможность будущему покупателю переехать из квартиры в загородный дом без полной оплаты за домовладение! Для быстрого переезда в готовый загородный дом достаточно внести 10% от стоимости коттеджа и Вы можете заселяться!
+										p На продажу имеющейся в собственности у покупателя квартиры предоставляется рассрочка четыре месяца. По факту реализации квартиры оплачивается остаточная стоимость за домовладение.
+					.info-col
+						.btn--md.btn--mark.btn--scroll Оставить заявку
+		.section-box
+			.main-cont
+				.title.title--md Возможности покупки
+				.payment-kind
+					.payment-kind__el
+						.payment-kind__el-head.payment-kind--lasur
+							.payment-kind__el-img
+								img(src="img/country.svg", alt="")
+							.payment-kind__el-title скидка регионам
+							.payment-kind__el-coner
+						.payment-kind__el-info Предъявите паспорт с региональной пропиской и получите скидку в размере 2,5 % от стоимости домовладения
+					.payment-kind__el
+						.payment-kind__el-head.payment-kind--green
+							.payment-kind__el-img
+								img(src="img/sale.svg", alt="")
+							.payment-kind__el-title при 100% оплате
+							.payment-kind__el-coner
+						.payment-kind__el-info Предъявите паспорт с региональной пропиской и получите скидку в размере 2,5 % от стоимости домовладения
+					.payment-kind__el
+						.payment-kind__el-head.payment-kind--yellow
+							.payment-kind__el-img
+								img(src="img/calendar.svg", alt="")
+							.payment-kind__el-title рассрочка
+							.payment-kind__el-coner
+						.payment-kind__el-info Каждому покупателю при необходимости будет предложена индивидуальная рассрочка с подходящим платежным планом
+					.payment-kind__el
+						.payment-kind__el-head.payment-kind--orange
+							.payment-kind__el-img
+								img(src="img/friendship.svg", alt="")
+							.payment-kind__el-title приведи друга
+							.payment-kind__el-coner
+						.payment-kind__el-info Если Вы уже стали нашим покупателем и привели к нам друзей, которые покупают у нас дом Вы сможете получить 35 000 рублей!
+		.section-box.section--gray
+			.main-cont
+				.title.title--md Ипотека
+				.payment-type
+					.payment-type__el
+						.payment-type__img
+							img(src="img/bank-sber.svg", alt="")
+						.payment-type__text ПАО "СБЕРБАНК" - партнер
+					.payment-type__el
+						.payment-type__img
+							img(src="img/bank-roselhoz.jpg", alt="")
+						.payment-type__text АО "Россельхозбанк" - сельская ипотека 2,7%
+					.payment-type__el
+						.payment-type__img
+							img(src="img/bank-vtb.svg", alt="")
+						.payment-type__text Ипотека от банка ПАО "Банк ВТБ"
+					.payment-type__el
+						.payment-type__img
+							img(src="img/bank-alfa.svg", alt="")
+						.payment-type__text Ипотека от банка АО "Альфа банк"
+
+
+		+order()
+	+footer()
+include ./block_html/_script.pug

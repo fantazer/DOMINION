@@ -1,0 +1,110 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		+bread()
+		.section
+			.main-cont
+				.title.title--lg Проекты домов
+				.text
+					p Собственный загородный дом из бревна – мечта любого современного человека. Дома из бревна хвойных пород «северного леса» самые экологически чистые, эстетичные и долговечные.
+				.btn--md.btn--mark Подробнее
+
+		.filter-wrap
+			.main-cont
+				.filter-head
+					.filter-toggle.js-commutator-el(data-item="filter" )
+						+icon("plus","icon is-open")
+						+icon("close","icon is-close")
+						span.is-open Открыть фильтр
+						span.is-close Закрыть фильтр
+				.filter-cont.js-commutator-cont(data-item="filter")
+					.filter
+						.filter-col
+							.filter-title Категория
+							.filter-list
+								- for (var i=0;i<5;i++)
+									.check-el
+										label.style-label.style-label--checkbox
+											input(type="checkbox").style-input
+											.style-input-element
+												+icon("checked","icon-check")
+											.style-input-text Дома из бревна <sup>38</sup>
+						.filter-col
+							.filter-title Площадь
+							.filter-list
+								- for (var i=0;i<4;i++)
+									.check-el
+										label.style-label.style-label--checkbox
+											input(type="checkbox").style-input
+											.style-input-element
+												+icon("checked","icon-check")
+											.style-input-text от 20 до 50 м2<sup>15</sup>
+						.filter-col
+							.filter-title Кол-во этажей
+							.filter-list
+								- for (var i=0;i<4;i++)
+									.check-el
+										label.style-label.style-label--checkbox
+											input(type="checkbox").style-input
+											.style-input-element
+												+icon("checked","icon-check")
+											.style-input-text 1 этаж <sup>15</sup>
+						.filter-col
+							.filter-title Кол-во спален
+							.filter-list
+								- for (var i=0;i<2;i++)
+									.check-el
+										label.style-label.style-label--checkbox
+											input(type="checkbox").style-input
+											.style-input-element
+												+icon("checked","icon-check")
+											.style-input-text 5 шт<sup>35</sup>
+						.filter-col
+							.filter-title Кол-во санузлов
+							.filter-list
+								- for (var i=0;i<5;i++)
+									.check-el
+										label.style-label.style-label--checkbox
+											input(type="checkbox").style-input
+											.style-input-element
+												+icon("checked","icon-check")
+											.style-input-text 1 санузел <sup>5</sup>
+					.btn--md.btn--mark.btn--square
+						.btn--icon.btn--icon-left
+							+icon("clear","nav-icon")
+							span сбросить фильтр
+		.section
+			.main-cont
+				.row.row-3
+					- for (var i=0;i<4;i++)
+						.unit
+							.unit__img(style="background-image:url('img/slide-1.jpg')")
+								.unit__label хит продаж
+							.type--bold.type--md Портсмут  <span class="type--gray">37 м<sup>2</sup></span>
+							.unit__type
+								span 2 этажа
+								span 3 спальни
+								span 1 санузел
+						.unit
+							.unit__img(style="background-image:url('img/slide-2.jpg')")
+								.unit__label хит продаж
+							.type--bold.type--md Портсмут  <span class="type--gray">37 м<sup>2</sup></span>
+							.unit__type
+								span 2 этажа
+								span 3 спальни
+								span 1 санузел
+						.unit
+							.unit__img(style="background-image:url('img/slide-3.jpg')")
+								.unit__label хит продаж
+							.type--bold.type--md Портсмут  <span class="type--gray">37 м<sup>2</sup></span>
+							.unit__type
+								span 2 этажа
+								span 3 спальни
+								span 1 санузел
+
+		+order()
+	+footer()
+include ./block_html/_script.pug

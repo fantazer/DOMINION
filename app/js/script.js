@@ -129,6 +129,38 @@ $(document).ready(function () {
 	});
 	// custom arrow el === end
 
+	// gallery
+	$('.gallery-slider').slick({
+		slidesToShow: 1,
+		speed: 500,
+		dots:false,
+		arrows:false,
+		asNavFor: '.gallery-slider-nav',
+
+	});
+	// gallery === end
+
+	// gallery nav
+	$('.gallery-slider-nav').slick({
+		slidesToShow: 5,
+		speed: 500,
+		dots:false,
+		arrows:false,
+		rows:0,
+		asNavFor: '.gallery-slider',
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 4
+				}
+			}
+		],
+	});
+	// gallery nav === end
+
+
 	// fancybox
 	$('.fancybox').fancybox();
 	// fancybox === end
@@ -151,7 +183,75 @@ $(document).ready(function () {
 	}
 	//stick scroll
 
-	$(function(){
-	    $('.gallery').mixItUp();
+	// gallery
+	$('.gallery').mixItUp();
+	// gallery === end
+
+	// toggle single
+	$('.js-toggle').click(function(){
+		$(this).toggleClass("active")
+	})
+	// toggle single === end
+
+	//toggle class + neighbor
+	$('.js-commutator-el').click(function(){
+		var thisItem = $(this).data("item");
+		var thisGroup = $(this).data("group") || false;
+		var isEach = $(this).data("each") || false;
+		var selector;
+		$(this).toggleClass("active")
+		if($('.js-commutator-cont').data('group')) {
+			selector = $(".js-commutator-cont[data-group=" + thisGroup + "");
+		}else{
+			selector = $(".js-commutator-cont");
+		}
+		selector.each(function(){
+			if($(this).data("item")=== thisItem){
+				$(this).slideToggle();
+			}else{
+				isEach ? $(this).slideUp("active") : false
+			}
+		})
+	})
+	//toggle class + neighbor === end
+
+	//toggle class + parent
+	$('.js-switch').click(function(){
+		var thisItem = $(this).data("item");
+		var isEach = $(this).data("each") || false;
+		var parrent = $(this).closest(".js-switch-parrent");
+		$(this).toggleClass("active")
+		var selector;
+		selector = $(".js-switch[data-item=" + thisItem + "")
+		if(isEach){
+			selector.not(this).removeClass('active')
+			selector.not(this).closest(".js-switch-parrent").find(".js-switch-cont").removeClass('active')
+		}
+		parrent.find(".js-switch-cont").toggleClass('active')
+	})
+	//toggle class + parent === end
+
+	// tab
+	$('.js-tab-head').click(function(){
+		var index = $(this).index();
+		var parent = $(this).closest('.js-tab-wrap');
+		parent.find('.js-tab-head').removeClass('active');
+		$(this).addClass('active');
+		parent.find('.js-tab-info').each(function(){
+			if($(this).index()===index){
+				$(this).addClass('active')
+			}else{
+				$(this).removeClass('active')
+			}
+		})
 	});
+	// tab === end
+
+	// accordion row toggle
+	$('.accordion__el-head').click(function () {
+		$(this).toggleClass('accordion__el--active');
+		$(this).closest('.accordion__el').find('.accordion__el-content').slideToggle();
+	});
+	// accordion row toggle === end
+
 });

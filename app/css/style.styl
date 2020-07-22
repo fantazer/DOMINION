@@ -26,7 +26,7 @@ body
 
 .content
 	flex-grow 1
-	padding-top: 50px
+	padding-top: 40px
 
 .content--mid
 	flex(mid)
@@ -307,19 +307,20 @@ body
 			z-indez 2
 			opacity: 1
 			transform translateY(0)
+			left 0
 //.header-nav__el-title
 .header-nav__drop
-	tr()
+	transition opacity .6s, transform .6s
 	position absolute
 	width: 300px
 	padding: 20px
 	background: white
 	top 100%
-	left 0
 	box-shadow 0 10px 10px rgba(0, 0, 0, 0.07)
 	z-index -1
 	opacity: 0
 	transform translateY(-10px)
+	left -9999px
 .header-nav__drop-el
 	display block
 	margin-bottom: 20px
@@ -515,6 +516,30 @@ body
 	img
 		width: 100%
 //=== Внешний вид пагинации end===
+
+.slider-control-wrap--sm
+	+below(1024px)
+		display none
+	f()
+	flex(between)
+	width: 100%
+	.slider-control
+		top calc(50% - 15px)
+		position absolute
+		padding: 10px
+		flex(mid)
+		cp()
+		size 30px
+		br(4px)
+		background: white
+		box-shadow 0px 2px 3px #929292
+		.icon
+			size 14px
+	.slider-control--left
+		left -20px
+	.slider-control--right
+		right -20px
+
 // slick === end
 
 
@@ -522,10 +547,13 @@ body
 .row
 	display: grid
 	grid-gap 40px
+.row--clear
+	grid-gap 0
 .row-2
 	+below(768px)
 		grid-template-columns: 1fr
 	grid-template-columns: repeat(2, 1fr)
+
 
 .row-3
 	grid-template-columns: repeat(3, 1fr)
@@ -678,6 +706,8 @@ a.link
 .section-extend
 	padding: 60px 0
 	margin-bottom: 60px
+.section-box
+	padding: 60px 0
 .section--gray
 	background: $snow
 .advant
@@ -720,6 +750,10 @@ a.link
 	position relative
 	padding: 26% 10%
 	background: #e6e6e6
+
+.map--sm
+	padding: 20% 10%
+
 .map--full
 	padding: 15% 10%
 	min-height 500px
@@ -730,13 +764,30 @@ a.link
 .unit__img
 	bg-full()
 	padding: 32% 10%
-	margin-bottom: 20px
+	margin-bottom: 10px
+	position relative
+.unit__label
+	position absolute
+	top 15px
+	left 0
+	padding: 5px 15px
+	color white
+	background: $mark
+	font-size: 12px
 .unit__title
 	font-weight: 700
 	@extend .type--md
 	color black
 	display inline-block
 	margin-bottom: 10px
+.unit__type
+	@extend .type--sm
+	color $gray
+	span
+		display inline-block
+		margin-right: 15px
+		&:last-child
+			margin-right:0
 
 .soc-row
 	f()
@@ -744,6 +795,7 @@ a.link
 	span
 		display inline-block
 		margin-right: 10px
+		font-weight: 700
 .soc-row__el
 	round()
 	flex(mid)
@@ -784,14 +836,17 @@ a.link
 
 .bread
 	margin-bottom: 30px
+	font-size: 14px
+	a span
+		color black
+	span
+		color $gray-light
 .village-head
 	.title
 		margin-bottom: 10px
 	.position
 		margin-bottom: 30px
 
-.vendor-img
-	margin-bottom: 20px
 
 .kind-row
 	f()
@@ -864,3 +919,436 @@ a.link
 	opacity: 1
 	color $green
 	border 1px solid $green
+
+
+
+.vendor-img
+	max-width 170px
+
+.filter-wrap
+	padding: 10px 0
+	background: $snow
+	margin-bottom: 50px
+.filter-cont
+	display none
+	padding-bottom: 20px
+.filter-head
+	f()
+	align-items center
+.filter-toggle
+	flex(mid)
+	padding: 20px 0
+	background: $snow
+	cp()
+	.icon
+		size 16px
+		margin-right: 10px
+	.is-close
+		display none
+.filter-toggle.active
+	.is-open
+		display none
+	.is-close
+		display block
+.filter
+	display: grid
+	grid-gap 20px
+	grid-template-columns: repeat(5, 1fr)
+	margin: 15px 0 30px 0
+//.filter-col
+.filter-title
+	font-weight: 700
+	margin-bottom: 20px
+.filter-list
+	.check-el
+		margin-bottom: 20px
+		font-weight: 600
+		sup
+			color $gray
+			font-size: 10px!important
+			display inline-block
+			transform translateY(-3px)
+		&:last-child
+			margin-bottom: 0
+//.style-label
+//.style-label--checkbox
+//.style-input
+//.style-input-element
+//.icon-check
+//.style-input-text
+
+// drop
+.drop-fade
+	transform: scaleY(0)
+	transition opacity .6s
+	transform-origin: top
+	opacity: 0
+	z-index -1
+	position absolute
+	left -9999px
+ 
+.drop-fade.active
+	transition opacity .6s
+	transform: scaleY(1)
+	opacity: 1
+	z-index 1
+	position relative
+	left 0
+ 
+ 
+.drop-slide
+	transform: scaleY(0)
+	transition transform .6s, opacity .6s
+	transform-origin: top
+	z-index -1
+	position absolute
+	left -9999px
+.drop-slide.active
+	transition transform .6s, opacity .6s
+	transform: scaleY(1)
+	opacity: 1
+	z-index 1
+	position relative
+	left 0
+// drop === end
+
+// item
+.card-wrap
+	+below(768px)
+		fw()
+	f()
+	justify-content space-between
+	margin-bottom: 40px
+.card-img
+	+below(768px)
+		width: 100%
+	width: calc(100% - 440px)
+	.gallery-slider-wrap
+		margin-top: 0
+
+.gallery__el
+	bg-full()
+	padding: 34% 10%
+	br(10px)
+.gallery__el-nav
+	bg-full()
+	br(10px)
+	cp()
+	padding: 34% 10%
+	border 2px solid transparent
+.gallery-slider-nav
+	.slick-slide
+		margin: 0 10px
+	.slick-current
+		tr()
+		.gallery__el-nav
+			opacity: .6
+	.slick-track
+		margin-left: 0px
+	.slick-list
+		margin: 0 -10px
+.gallery-slider
+	margin-bottom 10px
+
+.gallery-slider-wrap
+	margin: 40px 0
+
+.card-descr
+	+below(768px)
+		width: 100%
+	width: 400px
+	margin-left: 20px
+// item === end
+
+
+// tab
+.js-tab-info
+	position: absolute
+	top 0
+	left: -9999px
+	opacity:0
+
+.js-tab-info.active
+	opacity: 1
+	position: relative
+	top initial
+	left initial
+	transition opacity .6s
+// tab === end
+
+//.card-descr
+.card-row
+	margin-bottom: 30px
+.card-state
+	display: grid
+	grid-gap 20px
+	grid-template-columns: repeat(2, 1fr)
+//.card-state__el
+.card-state__title
+	font-weight 600
+	color $gray
+	margin-bottom: 5px
+.card-state__val
+	line-height: 1.6
+.card-size
+	display: grid
+	grid-gap 20px
+	grid-template-columns: repeat(3, 1fr)
+//.card-size__el
+.card-size__el-head
+	f()
+	align-items: flex-end
+	margin-bottom: 5px
+.card-size__el-numb
+	@extend .type--lg
+	line-height: 1
+	margin-right: 10px
+.card-size__el-icon
+	.icon
+		size 54px
+//.card-size__text
+.card-type
+	f()
+	fw()
+.card-type__el
+	margin: 0 10px 5px 0
+	padding: 3px 10px
+	border 1px solid $border-color
+	font-weight: 700
+	text-align center
+.card-advant
+	padding: 20px
+	line-height: 1.4
+	border 1px solid $snow
+	margin-top: -1px
+	&:nth-child(odd)
+		background: $snow
+.card-get
+	flex(between)
+	.btn--md
+		width: 48%
+	.card-get__price
+		padding: 15px 10px
+	.card-get__change
+		padding: 10px 5px
+.card-info
+	width calc(100% - 440px)
+	margin-bottom: 60px
+.card-callback
+	flex(between)
+.card-callback__text
+	font-weight: 700
+	line-height: 1.4
+	margin-right: 20px
+.tab__head-wrap
+	border-bottom 1px solid $border-color
+//.main-cont
+.tab
+	margin: 20px 0 50px 0
+.tab__head
+	f()
+.tab__head-el
+	padding: 30px
+	flex(mid)
+	margin-bottom: -1px
+	font-weight: 700
+	text-align center
+	cp()
+	border 1px solid transparent
+	transition color .4s
+	&:hover
+		color $green
+.tab__head-el.active
+	border 1px solid $border-color
+	border-bottom 1px solid transparent
+	background: white
+//.tab-info-wrap
+.tab-cont
+	padding: 30px
+
+.payment-adv
+	display: grid
+	grid-gap 30px
+	grid-template-columns: repeat(3, 1fr)
+	margin: 50px 0
+.payment-adv__el
+	f()
+	align-items center
+	.icon
+		margin-right: 20px
+		size 60px
+	span
+		display inline-block
+		width calc(100% - 80px)
+		line-height: 1.6
+
+
+// accordion
+.accordion
+	+below(640px)
+		width calc(100% + 30px)
+	background: white
+.accordion__el
+	border 1px solid #e5e5e5
+	margin-top: -1px
+	cp()
+	&:hover
+		.accordion__el-head-icon
+			&:before
+				content ''
+				background: $mark
+			&:after
+				content ''
+				background: $mark
+
+.accordion__el-head
+	+below(640px)
+		padding: 20px
+	padding: 30px 40px
+	flex(between)
+	color black
+
+.accordion__el-head-text
+	+below(640px)
+		font-weight: 400
+		line-height: 1.6
+	@extend .type--md
+	width: 80%
+	font-size: 18px
+	font-weight: 700
+
+
+
+.accordion__el-head-icon
+	+below(640px)
+		size 16px
+	position: relative
+	size 24px
+	&:before
+		content ''
+		tr(all)
+		height: 2px
+		width: 100%
+		background: gray
+		position: absolute
+		top calc(50% - 1px)
+	&:after
+		content ''
+		tr(all)
+		height: 100%
+		width: 2px
+		background: gray
+		position: absolute
+		left calc(50% - 1px)
+
+.accordion__el-content
+	+below(640px)
+		padding: 0 30px 30px 30px
+	padding: 40px
+	display: none
+	p
+		&:first-child
+			margin-top: 0
+		&:last-child
+			margin-bottom: 0
+
+.accordion__el--active
+	border-bottom 1px solid $border-color
+	.accordion__el-head-text
+		color $green
+	.accordion__el-head-icon
+		&:after
+			content ''
+			transform rotate(45deg)
+		&:before
+			content ''
+			transform rotate(45deg)
+// accordion === end
+
+.payment-kind
+	display: grid
+	grid-gap 30px
+	grid-template-columns: repeat(4, 1fr)
+.payment-kind--lasur
+	background: #19b99b
+	.payment-kind__el-coner
+		background: #19b99b
+.payment-kind--green
+	background: #2ecd71
+	.payment-kind__el-coner
+		background: #2ecd71
+.payment-kind--yellow
+	background: #f2c40f
+	.payment-kind__el-coner
+		background: #f2c40f
+.payment-kind--orange
+	background: #e77e23
+	.payment-kind__el-coner
+		background: #e77e23
+
+.payment-kind__el-head
+	padding: 30px 10px
+	flex(mid)
+	fl()
+	min-height 230px
+	margin-bottom: 30px
+	position relative
+.payment-kind__el-coner
+	position absolute
+	size 30px
+	transform rotate(45deg)
+	bottom -10px
+	left calc(50% - 15px)
+.payment-kind__el-img
+	margin-bottom: 20px
+.payment-kind__el-title
+	@extend .type--md
+	font-weight 700
+	color white
+.payment-kind__el-info
+	line-height: 1.6
+
+.payment-type
+	display: grid
+	grid-gap 30px
+	grid-template-columns: repeat(4, 1fr)
+.payment-type__el
+	padding: 30px
+	background: white
+	border 1px solid $gray-light
+.payment-type__img
+	margin-bottom: 15px
+.payment-type__text
+	width: 80%
+	line-height: 1.6
+	font-size: 14px
+
+.about
+	f()
+	fw()
+.about-col
+	width: 50%
+
+.about-col__img
+	width: 100%
+	height: 100%
+	bg-full()
+
+.about-col__text
+	padding: 30px
+	p
+		&:last-child
+			margin-bottom: 0
+	ul
+		margin-bottom: 0
+		li
+			margin-bottom: 2px
+
+.about-col__text--clear
+	padding-left: 0
+
+.contact-row
+	margin-bottom: 30px
+.contact-row__el
+	display block
+	font-weight: 700

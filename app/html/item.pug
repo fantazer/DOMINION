@@ -1,0 +1,132 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		+bread()
+		.main-cont
+			.card-wrap
+				.card-img
+					.gallery-slider-wrap
+						.gallery-slider
+							.gallery__el(style="background-image:url('img/slide-1.jpg')")
+							.gallery__el(style="background-image:url('img/slide-2.jpg')")
+							.gallery__el(style="background-image:url('img/slide-3.jpg')")
+							.gallery__el(style="background-image:url('img/slide-4.jpg')")
+							.gallery__el(style="background-image:url('img/slide-5.jpg')")
+						.slider-wrap
+							.slider-item.gallery-slider-nav
+								- for (var i=0;i<2;i++)
+									.gallery__el-nav-wrap
+										.gallery__el-nav(style="background-image:url('img/slide-1.jpg')")
+									.gallery__el-nav-wrap
+										.gallery__el-nav(style="background-image:url('img/slide-2.jpg')")
+									.gallery__el-nav-wrap
+										.gallery__el-nav(style="background-image:url('img/slide-3.jpg')")
+									.gallery__el-nav-wrap
+										.gallery__el-nav(style="background-image:url('img/slide-4.jpg')")
+									.gallery__el-nav-wrap
+										.gallery__el-nav(style="background-image:url('img/slide-5.jpg')")
+							.slider-control-wrap--sm
+								.slider-control.slider-control--right
+									+icon("arrow-right","icon")
+								.slider-control.slider-control--left
+									+icon("arrow-left","icon")
+				.card-descr
+					.title.title--lg Айли
+					.card-row
+						.card-state
+							.card-state__el
+								.card-state__title Общая площадь
+								.card-state__val.type--bold.type--green.type--lg 67 м2
+							.card-state__el
+								.card-state__title Габариты дома, м
+								.card-state__val.type--lg 5,6 х 11,48
+							.card-state__el
+								.card-state__title Материал стен
+								.card-state__val.type--bold Клеенный брус
+							.card-state__el
+								.card-state__title Сезонность
+								.card-state__val.type--bold Для постоянного проживания
+					.card-row
+						.card-size
+							.card-size__el
+								.card-size__el-head
+									.card-size__el-numb 1
+									.card-size__el-icon
+										+icon("stairs--color","icon")
+								.card-size__text этаж
+							.card-size__el
+								.card-size__el-head
+									.card-size__el-numb 2
+									.card-size__el-icon
+										+icon("bed--color","icon")
+								.card-size__text Спальни
+							.card-size__el
+								.card-size__el-head
+									.card-size__el-numb 1
+									.card-size__el-icon
+										+icon("bathroom--color","icon")
+								.card-size__text Санузел
+					.card-row
+						.title.title--light.type--gray Варианты исполнения
+						.card-type
+							.card-type__el Каркас
+							.card-type__el Брус
+					.card-row
+						.card-advant Технический надзор на всех этапах строительства
+						.card-advant По вашему желанию возможно внесение изменений в проект
+					.card-get
+						.btn--md.btn--mark.card-get__price Узнать цену
+						.btn--md.btn--light.card-get__change Хочу изменить планировку
+			.card-info
+				.title.title--md О доме
+				.text
+					p Небольшой стильный одноэтажный проект «Айли» выполнен в скандинавском стиле, отлично подходит для постоянного комфортного проживания. Привлекает внимание благодаря панорамному остеклению, оригинальности фасада и удобному расположению комнат.
+
+					p Планировка и размеры помещений в проекте продуманы до мелочей. Просторная кухня-гостиная с панорамными окнами, 2 спальни, санузел, помещение котельной с отдельным входом. Вы можете выбрать планировку дома из представленных.
+					.card-callback
+						.card-callback__text Домокомлект готовится на нашем производстве в Вологде. Вы можете забронировать его. Срок поставки 2 недели.
+						.card-callback__get
+							.btn--md.btn--red Забронировать
+
+		.main-cont
+			.title.title--md В комплектацию входит
+		.tab.js-tab-wrap
+			.tab__head-wrap
+				.main-cont
+					.tab__head
+						-
+							var items = [
+								"Проектирование",
+								"Замеры участка",
+								"Фундамент",
+								"Стеновой комплект",
+								"Кровля",
+								"Доставка"
+							];
+						each item,i in items
+							.tab__head-el.js-tab-head(class=i === 0 ? 'active' : null) #{item}
+			.main-cont
+				.tab-info-wrap
+					- for (var i=0;i<9;i++)
+						.tab-cont.text.js-tab-info(class=i === 0 ? 'active' : null)
+							h4 Описание комплектации #{i+1}
+							p Бесплатное проектирование при строительстве:
+							p Шаг 1. Бесплатная консультация профессионального архитектора
+							p Шаг 2. Эскиз дома и расчёт стоимости строительства.
+							p Шаг 3. Индивидуальный проект дома (включает):
+							ul
+								li АР «архитектурный раздел» (планы этажей, фасады дома, план кровли и стропильной системы)
+								li КЖ «конструкции железобетонные» (план фундамента, схема армирования и труб ввода / вывода)
+								li КД «конструкции деревянные» (высотный разрез, *детальная развёртка стен, план перекрытий)
+								li 3-d моделирование(трёхмерную модель интерьера и экстерьера дома)
+								li смета (подробная калькуляция материалов и работ для строительства дома)
+
+							p Шаг 4. При строительстве дома, клиенты компании получают индивидуальный проект в подарок!
+
+							.btn--md.btn--mark Заказать
+		+order()
+	+footer()
+include ./block_html/_script.pug

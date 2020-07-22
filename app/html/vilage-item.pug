@@ -7,15 +7,14 @@ include block_html/_include.pug
 		+bread()
 		.section
 			.main-cont
-				.village-head
-					.title.title--lg Южные просторы
-					.position.position--mark
-						+icon("placeholder","icon icon--sm")
-						span Ломоносовский район, деревня Ускуля / 3 км от города
-
 				// village intro
 				.row.row-2
 					.col
+						.village-head
+							.title.title--lg Южные просторы
+							.position.position--mark
+								+icon("placeholder","icon icon--sm")
+								span Ломоносовский район, деревня Ускуля / 3 км от города
 						.box-img.border.border--bottom(style="background-image:url('img/village-2.jpg')")
 					.col
 						.vendor-img
@@ -58,9 +57,9 @@ include block_html/_include.pug
 		// about
 		.section#about
 			.main-cont
+				.title.title--md О посёлке
 				.info
 					.info-col-lg
-						.title.title--md О посёлке
 						.text
 							p Коттеджный поселок «Южные просторы» расположен рядом с поселком Рассколово, Виллозевского городского поселения в восточной части Ломоносовского района Ленинградской области. Статус земли – ДНП (вид разрешенного использования – дачное строительство). Старт продаж начался в 2017 г.
 
@@ -171,7 +170,7 @@ include block_html/_include.pug
 		// plan === end
 
 		// gallery
-		.section-extend.section--gray#photo
+		.section-box.section--gray#photo
 			.main-cont
 				.title.title--md Фотографии наших работ
 				.list-filter

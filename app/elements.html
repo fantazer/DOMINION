@@ -29,50 +29,83 @@
 </head>
 
 <body>
+    <style type="text/css">
+        .elements-hr {
+        		margin: 40px 0;
+        		display: block;
+        		height: 1px;
+        		border-bottom: 1px solid #d1d1d1;
+        	}
+        	
+        	.all-page-color {
+        		display: flex;
+        		flex-wrap: wrap;
+        	}
+        	
+        	.all-page-color__el {
+        		margin: 20px;
+        	}
+        	
+        	.all-page-color__block {
+        		width: 100px;
+        		height: 100px;
+        		border-radius: 10px;
+        		margin-bottom: 10px;
+        	}
+        	
+        	.all-page-color__el-name {
+        		text-align: center;
+        		font-size: 14px;
+        		font-weight: 700;
+        	}
+        	
+        	.old-browser-text {
+        		text-align: center;
+        		color: #fff;
+        		font-size: 20px;
+        	}
+        	
+        	.element-list-svg {
+        		display: flex;
+        		justify-content: center;
+        		align-items: center;
+        		flex-wrap: wrap;
+        	}
+        	
+        	.element-list-svg__icon {
+        		width: 12%;
+        		margin: 20px 0;
+        		display: flex;
+        		justify-content: center;
+        		align-items: center;
+        		flex-flow: column;
+        	}
+        	
+        	.element-list-svg__icon .icon-el {
+        		margin-bottom: 10px;
+        		width: 35px;
+        		height: 35px;
+        	}
+    </style>
     <div class="main-cont main-cont--all">
+        <h1>Заголовок h1</h1>
+        <h2>Заголовок h2</h2>
+        <h3>Заголовок h3</h3>
+        <h4>Заголовок h4</h4>
+        <h5>Заголовок h5</h5>
         <div class="elements-hr"></div>
-        <div class="all-page-color">
-            <div class="all-page-color__el">
-                <div class="all-page-color__block" style="background-color:#000000"></div>
-                <div class="all-page-color__el-name">#000000</div>
-            </div>
-            <div class="all-page-color__el">
-                <div class="all-page-color__block" style="background-color:#0095c6"></div>
-                <div class="all-page-color__el-name">#0095c6</div>
-            </div>
-            <div class="all-page-color__el">
-                <div class="all-page-color__block" style="background-color:#f20022"></div>
-                <div class="all-page-color__el-name">#f20022</div>
-            </div>
-            <div class="all-page-color__el">
-                <div class="all-page-color__block" style="background-color:#efefef"></div>
-                <div class="all-page-color__el-name">#efefef</div>
-            </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque consequuntur deleniti ducimus eius itaque iure laborum laudantium natus perspiciatis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad, alias aliquid amet autem deleniti dolor eligendi eos esse, fuga incidunt itaque iure minus officiis quasi quo sequi suscipit tempora tenetur totam. Alias aperiam commodi deserunt
+                facilis mollitia nobis provident.</p>
+            <ul>
+                <li>пункт 1</li>
+                <li>пункт 2</li>
+                <li>пункт 3</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate delectus fuga impedit, omnis velit voluptate. Ab ad adipisci beatae consectetur consequuntur cum cumque delectus dolor doloremque ducimus earum error eveniet hic illum
+                incidunt iste labore laborum molestiae nemo non, pariatur, possimus qui quia quisquam rem sit, suscipit tempore unde.</p>
         </div>
-        <div class="elements-hr"></div>
-        <h1>Заголовок h1 class = "type--xl"</h1>
-        <p class="type--xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur soluta doloremque, necessitatibus repellendus iure error at excepturi voluptatem incidunt quos quam, dolorem dolore explicabo nihil nisi odio dolor optio? Exercitationem hic amet,
-            similique enim qui voluptatibus est earum provident eum.</p>
-        <h2>Заголовок h2 class = "type--lg"
-            <p class="type--lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur soluta doloremque, necessitatibus repellendus iure error at excepturi voluptatem incidunt quos quam, dolorem dolore explicabo nihil nisi odio dolor optio? Exercitationem hic
-                amet, similique enim qui voluptatibus est earum provident eum.</p>
-        </h2>
-        <h3>Заголовок h3 class = "type--md"
-            <p class="type--md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur soluta doloremque, necessitatibus repellendus iure error at excepturi voluptatem incidunt quos quam, dolorem dolore explicabo nihil nisi odio dolor optio? Exercitationem hic
-                amet, similique enim qui voluptatibus est earum provident eum.</p>
-        </h3>
-        <h4>Заголовок h4 class = "type--main"
-            <p class="type--main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur soluta doloremque, necessitatibus repellendus iure error at excepturi voluptatem incidunt quos quam, dolorem dolore explicabo nihil nisi odio dolor optio? Exercitationem hic
-                amet, similique enim qui voluptatibus est earum provident eum.</p>
-        </h4>
-        <h5>Заголовок h5 class = "type--sm"
-            <p class="type--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur soluta doloremque, necessitatibus repellendus iure error at excepturi voluptatem incidunt quos quam, dolorem dolore explicabo nihil nisi odio dolor optio? Exercitationem hic
-                amet, similique enim qui voluptatibus est earum provident eum.</p>
-        </h5>
-        <h6>Заголовок h6 class = "type--xs"
-            <p class="type--xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur soluta doloremque, necessitatibus repellendus iure error at excepturi voluptatem incidunt quos quam, dolorem dolore explicabo nihil nisi odio dolor optio? Exercitationem hic
-                amet, similique enim qui voluptatibus est earum provident eum.</p>
-        </h6>
         <div class="elements-hr"></div>
         <a class="btn--md btn--mark" href="#">Стандартная</a>
         <a class="btn--md btn--disable" href="#">Неактивная</a>
@@ -106,80 +139,98 @@
             </div>
         </a>
         <div class="elements-hr"></div>
-        <div class="elements-buttons-block">
-            <button class="btn--sm btn--mark">Кнопка типа button</button>
-            <button class="btn--sm btn--light">Кнопка типа button</button>
-            <button class="btn--sm btn--disable">Кнопка типа button</button>
-            <input class="btn--sm btn--mark" type="submit" value="Кнопка типа submit" />
-            <input class="btn--sm btn--light" type="submit" value="Кнопка типа submit" />
-            <input class="btn--sm btn--disable" type="submit" value="Кнопка типа submit" />
-        </div>
+        <a class="link--mark" href="#">Цветная ссылка</a>
+        <a class="link--main" href="#">Новая ссылка</a>
+        <a class="link--text" href="#">Ссылка в тексте</a>
         <div class="elements-hr"></div>
-        <div class="elements-link-block">
-            <a class="link--mark" href="#">Цветная ссылка</a>
-            <a class="link--main" href="#">Новая ссылка</a>
-            <a class="link--text" href="#">Ссылка в тексте</a>
-        </div>
-        <div class="elements-hr"></div>
-        <div class="elements-input-block">
-            <input class="input" type="text" placeholder="Username" />
-            <input class="input" type="text" placeholder="Passwords" />
-            <textarea class="textarea" name="" cols="30" rows="10" placeholder="Text"></textarea>
-        </div>
-        <div class="elements-hr"></div>
-        <div class="elements-checkbox-block">
-            <div class="check-el">
-                <label class="style-label style-label--checkbox style-label--disable">
-                    <input class="style-input" type="checkbox" />
-                    <div class="style-input-element">
-                        <svg class="icon-check">
-                            <use xlink:href="#checked"></use>
+        <div class="forms">
+            <div class="input-row input-row--error">
+                <div class="input-row__title">Ваше имя</div>
+                <input class="input" type="text" placeholder="Ваше имя" />
+                <div class="error-msg">Введённые данные не должны содержать цифры</div>
+            </div>
+            <div class="input-cont input-cont--two">
+                <div class="input-row">
+                    <div class="input-row__title">Ваше имя</div>
+                    <input class="input" type="text" placeholder="Ваше имя" />
+                </div>
+                <div class="input-row">
+                    <div class="input-row__title">Ваше имя</div>
+                    <input class="input" type="text" placeholder="Ваше имя" />
+                </div>
+            </div>
+            <div class="input-cont input-cont--three">
+                <div class="input-row">
+                    <div class="input-row__title">Ваше имя</div>
+                    <input class="input" type="text" placeholder="Ваше имя" />
+                </div>
+                <div class="input-row">
+                    <div class="input-row__title">Ваше имя</div>
+                    <input class="input" type="text" placeholder="Ваше имя" />
+                </div>
+                <div class="input-row">
+                    <div class="input-row__title">Ваше имя</div>
+                    <input class="input" type="text" placeholder="Ваше имя" />
+                </div>
+            </div>
+            <div class="input-get">
+                <input class="input" type="text" placeholder="Ваше имя" />
+                <div class="input-get__btn">
+                    <input class="input input-get__btn-el" type="submit" value="" />
+                    <svg class="icon">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-row__title">Ваше имя</div>
+                <textarea class="input" name="text" cols="30" rows="10"></textarea>
+            </div>
+            <!--checkbox remember-->
+            <div class="login-remember">
+                <div class="check-el">
+                    <label class="style-label style-label--checkbox">
+                        <input class="style-input" type="checkbox" />
+                        <div class="style-input-element">
+                            <svg class="icon">
+                                <use xlink:href="#checked"></use>
+                            </svg>
+                        </div>
+                        <div class="style-input-text">Я ознакомился с
+                            <a href="#">политикой конфиденциальности</a>,
+                            <a href="#">публичной офертой</a>и даю согласие на обработку моих персональных данных</div>
+                    </label>
+                </div>
+            </div>
+            <!--upload-->
+            <div class="upload-wrap">
+                <div class="upload-img"></div>
+                <label class="upload">
+                    <div class="upload__icon">
+                        <svg class="icon">
+                            <use xlink:href="#arrow-left"></use>
                         </svg>
                     </div>
-                    <div class="style-input-text">Наименование услуги</div>
+                    <div class="upload__text">Прикрепить фото</div>
+                    <input class="upload-btn" type="file" />
                 </label>
             </div>
-            <br/>
-            <div class="check-el">
-                <label class="style-label style-label--checkbox">
-                    <input class="style-input" type="checkbox" />
-                    <div class="style-input-element">
-                        <svg class="icon-check">
-                            <use xlink:href="#checked"></use>
-                        </svg>
-                    </div>
-                    <div class="style-input-text">Наименование услуги</div>
-                </label>
-            </div>
-            <br/>
-            <div class="check-el">
-                <label class="style-label style-label--radio">
-                    <input class="style-input" type="radio" />
-                    <div class="style-input-element">
-                        <div class="icon-radio"></div>
-                    </div>
-                    <div class="style-input-text">Наименование услуги</div>
-                </label>
-            </div>
-            <br/>
-            <div class="check-el">
-                <label class="style-label style-label--radio">
-                    <input class="style-input" type="radio" name="disable" />
-                    <div class="style-input-element">
-                        <div class="icon-radio"></div>
-                    </div>
-                    <div class="style-input-text">Наименование услуги</div>
-                </label>
-            </div>
-            <br/>
+            <input class="btn--md btn--mark" type="submit" value="Отправить" />
         </div>
-        <div class="element-select">
-            <select class="select-beauty select">
-                <option value="1" data-display="Выберите налог">Нет</option>
-                <option value="2">Новый налог 1</option>
-                <option value="3">Новый налог 2</option>
-                <option value="4">Новый налог 3</option>
-            </select>
+        <div class="elements-hr"></div>
+        <div class="dropdown">
+            <input type="hidden" name="name" value="0" />
+            <div class="dropdown-current">
+                <div class="dropdown-current__val">Начальное значение</div>
+                <svg class="icon">
+                    <use xlink:href="#arrow-down-fat"></use>
+                </svg>
+            </div>
+            <div class="dropdown-menu">
+                <div class="dropdown-menu__el" data-value="#">Значение 1</div>
+                <div class="dropdown-menu__el" data-value="#">Значение 2</div>
+                <div class="dropdown-menu__el" data-value="#">Значение 3</div>
+            </div>
         </div>
         <div class="elements-hr"></div>
         <div class="element-list-svg">
@@ -296,6 +347,12 @@
                     <use xlink:href="#checked"></use>
                 </svg>
                 <div class="element-list-svg__name">checked</div>
+            </div>
+            <div class="element-list-svg__icon">
+                <svg class="icon-el">
+                    <use xlink:href="#clear"></use>
+                </svg>
+                <div class="element-list-svg__name">clear</div>
             </div>
             <div class="element-list-svg__icon">
                 <svg class="icon-el">

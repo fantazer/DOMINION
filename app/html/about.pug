@@ -1,0 +1,126 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	+header()
+	.content
+		+bread()
+		.main-cont
+			.title.title--lg О нас
+			.section
+				.row.row-2
+					.col
+						img(src="img/area-6.jpg", alt="")
+					.col
+						.title.title--md Коттеджные поселки в Ленинградской области
+						.text
+							p Специалисты, создавшие компанию «DOMINION ltd», стояли у истоков формирования земельного рынка Ленинградской области с 2007 года.
+
+							p Основная сфера деятельности компании – девелопмент: подготовка готовых проектов посёлков и реализация земельных участков c полным комплектом документов.
+
+							p Мы сформировали ценовую политику, дающую возможность каджому воплотить мечту о загородном доме.
+		.section.section--gray
+			.main-cont
+				.about
+					.about-col
+						.about-col__text.about-col__text--clear
+							.title.title--md Производство
+							.text
+								p “Dominion Ltd” - предприятие полного цикла производства, в собственности которой находятся значительная сырьевая база и современное техническое оборудование. В работе мы используем только свои трудовые и материальные ресурсы и не привлекаем сторонних «подрядчиков».Контроль производственного процесса с момента лесозаготовки до сдачи объекта, позволяет нам всегда гарантировать 100% качество и разумные цены на строительство.
+
+								p Наша компания успешно работает на рынке с 1998 года.
+					.about-col
+						.about-col__img(style="background-image:url('img/area-7.jpg')")
+					.about-col
+						.about-col__img(style="background-image:url('img/area-8.jpg')")
+					.about-col
+						.about-col__text
+							.text
+								.text
+									p Компания специализируется на строительстве домов и бань из следующих материалов:
+									ul
+										li бревно ручной рубки
+										li клееный брус
+										li сухой профилированный брус
+										li сухое оцилиндрованное бревно
+										li Пенобетон
+										li Кирпич
+										li Фахверковая конструкция
+		.main-cont
+			.title.title--md Технологии производства
+		.tab.js-tab-wrap
+			.tab__head-wrap
+				.main-cont
+					.tab__head
+						-
+							var items = [
+								"Ручная рубка",
+								"Клееный брус",
+								"Сухое цилиндрированное бревно",
+								"Сухой профилированный брус"
+							];
+						each item,i in items
+							.tab__head-el.js-tab-head(class=i === 0 ? 'active' : null) #{item}
+			.main-cont
+				.tab-info-wrap
+					- for (var i=0;i<9;i++)
+						.tab-cont.text.js-tab-info(class=i === 0 ? 'active' : null)
+							h4 Описание комплектации #{i + 1}
+							p Бесплатное проектирование при строительстве:
+							p Шаг 1. Бесплатная консультация профессионального архитектора
+							p Шаг 2. Эскиз дома и расчёт стоимости строительства.
+							p Шаг 3. Индивидуальный проект дома (включает):
+							ul
+								li АР «архитектурный раздел» (планы этажей, фасады дома, план кровли и стропильной системы)
+								li КЖ «конструкции железобетонные» (план фундамента, схема армирования и труб ввода / вывода)
+								li КД «конструкции деревянные» (высотный разрез, *детальная развёртка стен, план перекрытий)
+								li 3-d моделирование(трёхмерную модель интерьера и экстерьера дома)
+								li смета (подробная калькуляция материалов и работ для строительства дома)
+
+							p Шаг 4. При строительстве дома, клиенты компании получают индивидуальный проект в подарок!
+
+							.btn--md.btn--mark Заказать
+		// gallery
+		.section-box.section--gray#photo
+			.main-cont
+				.title.title--md Фотографии наших работ
+				.list-filter
+					.list-filter__el(data-filter="all") Все
+					.list-filter__el(data-filter=".filter--house") Дома
+					.list-filter__el(data-filter=".filter--area") Участки
+					.list-filter__el(data-filter=".filter--interior") Интерьер
+				.gallery
+					- for (var i=1;i<=3;i++)
+						a(href="img/slide-1.jpg" style="background-image:url('img/slide-1.jpg')").gallery__el.fancybox.mix.mix-el.filter--house
+						a(href="img/slide-1.jpg" style="background-image:url('img/slide-2.jpg')").gallery__el.fancybox.mix.mix-el.filter--area
+						a(href="img/slide-1.jpg" style="background-image:url('img/slide-3.jpg')").gallery__el.fancybox.mix.mix-el.filter--interior
+						a(href="img/slide-1.jpg" style="background-image:url('img/slide-4.jpg')").gallery__el.fancybox.mix.mix-el.filter--area
+						a(href="img/slide-1.jpg" style="background-image:url('img/slide-5.jpg')").gallery__el.fancybox.mix.mix-el.filter--house
+		// gallery === end
+		// contact
+		.fluid-cont
+			.fluid-cont-el
+				.map.map--sm
+					.map__el
+						//put map her
+			.fluid-cont-el.fluid-cont-el--right
+				.fluid-cont-wrap
+					.title.title--lg Контакты
+					.contact-row
+						.contact-row__el 190005 Санкт-Петербург,<br> 1-я Красноармейская, д.12, офис 7
+					.contact-row
+						a(href="tel:+7 (921) 925-30-75").contact-row__el +7 (921) 925-30-75
+						a(href="tel:+7 (812) 467-45-17").contact-row__el +7 (812) 467-45-17
+					.contact-row
+						a(href="mailto:info@dominion-ltd.ru").contact-row__el info@dominion-ltd.ru
+					.contact-row
+						.soc-row
+							span Мы в соцсетях
+							a(href="#").soc-row__el
+								+icon("soc-fb","icon")
+							a(href="#").soc-row__el
+								+icon("soc-inst","icon")
+			//contact === end
+		+order()
+	+footer()
+include ./block_html/_script.pug

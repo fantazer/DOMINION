@@ -91,7 +91,7 @@
 
 .style-input-text
 	color black
-	width: calc(100% - 80px)
+	width: calc(100% - 40px)
 	line-height: 1.6
 	a
 		color $mark
@@ -124,7 +124,11 @@
 
 .input-cont
 	display: grid
-	grid-gap 20px
+	grid-gap 15px
+	position relative
+	&:last-child
+		.input-row
+			margin-bottom: 0
 .input-cont--two
 	grid-template-columns: 1fr 1fr
 	+below(640px)

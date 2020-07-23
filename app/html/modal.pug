@@ -4,7 +4,6 @@ include block_html/_include.pug
 style(type='text/css').
 	.btn--md {
 		display: inline-block;
-		margin-bottom: 20px;
 	}
 
 	.btn-wrap {
@@ -15,13 +14,29 @@ style(type='text/css').
 	}
 
 
-.main-cont
-	p Чтобы вызвать нужное окно добавь на элемент класс .modal-get и data-modal="имя окна"
-	p Чтобы добавить метод закрытия окна по клику на элемент добавиь класс .modal-send
-	.btn-wrap
-		.btn--md.btn--mark.modal-get(data-modal="order") Заявка | data-modal="code "
-
-+footer()
+.page
+	+header()
+	.content
+		.main-cont
+			p Чтобы вызвать нужное окно добавь на элемент класс .modal-get и data-modal="имя окна"
+			p Чтобы добавить метод закрытия окна по клику на элемент добавиь класс .modal-send
+			br
+			.btn-wrap
+				.btn--md.btn--mark.modal-get(data-modal="callback") обратный звонок | data-modal="callback"
+				br
+				.btn--md.btn--mark.modal-get(data-modal="choose") выбрать участок | data-modal="choose"
+				br
+				.btn--md.btn--mark.modal-get(data-modal="change") изменить планировку | data-modal="change"
+				br
+				.btn--md.btn--mark.modal-get(data-modal="true") Успешное действие | data-modal="true"
+				br
+				.btn--md.btn--mark.modal-get(data-modal="price") узнать цену | data-modal="price"
+				br
+				.btn--md.btn--mark.modal-get(data-modal="order") оставить заявку | data-modal="order"
+				br
+				br
+				br
+	+footer()
 +modal()
 
 include ./block_html/_script.pug

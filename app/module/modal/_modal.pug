@@ -2,36 +2,153 @@ mixin modal()
 	.modal-layer
 		.modal-filter
 		.modal-wrap
+			//callback
+			.modal(data-modal="callback")
+				.modal-content
+					.modal-close
+						+icon("close","icon")
+					.modal-container
+						.modal-container__img(style="background-image:url('img/modal-1.jpg')")
+						.modal-container__info
+							.modal-title Введите контакты и мы перезвоним
+							.modal-text Заполните поля ниже и мы свяжемся с вами в удобное для вас время
+							form.validate-form( action="javascript:void(null);")
+								.input-cont
+									.input-row
+										input(type="text" placeholder="Ваше имя" class="input")
+								.input-cont
+									.input-row
+										input(type="text" placeholder="Телефон" class="input")
+								.input-cont
+									.input-row
+										input(type="text" placeholder="Удобное время для звонка" class="input")
+								.modal-send.btn--md.btn--mark Заказать звонок
+			//callback === end
+
+			//choose
+			.modal(data-modal="choose")
+				.modal-content
+					.modal-close
+						+icon("close","icon")
+					.modal-container
+						.modal-container__img(style="background-image:url('img/modal-2.jpg')")
+						.modal-container__info
+							.modal-title Осталось всего 18 участков, не упусти свой!
+							.modal-text Заполните поля ниже и мы свяжемся с вами в удобное для вас время
+							form.validate-form( action="javascript:void(null);")
+								.input-cont
+									.input-row
+										input(type="text" placeholder="Ваше имя" class="input")
+								.input-cont
+									.input-row
+										input(type="text" placeholder="Телефон" class="input")
+								.input-cont
+									.input-row
+										.dropdown
+											input(type="hidden" name="name" value="0")
+											.dropdown-current
+												.dropdown-current__val Елагино
+												+icon("arrow-down-fat","icon")
+											.dropdown-menu
+												.dropdown-menu__el(data-value="#") Москва
+												.dropdown-menu__el(data-value="#") Волгоград
+												.dropdown-menu__el(data-value="#") Самара
+												.dropdown-menu__el(data-value="#") Екатеринбург
+								.modal-send.btn--md.btn--mark Заказать звонок
+			//choose === end
+			//change
+			.modal(data-modal="change")
+				.modal-content
+					.modal-close
+						+icon("close","icon")
+					.modal-container.modal-container--full
+						.modal-container__info
+							.modal-title Изменить планировку
+							.modal-text Расскажите кратко, что вы бы хотели поменять в планировке дома
+							form.validate-form( action="javascript:void(null);")
+								.row.row-2
+									.col
+										.input-cont
+											.input-row
+												textarea(name="text", cols="30", rows="10" class="input" placeholder="Комментарий")
+									.col
+										.input-cont
+											.input-row
+												input(type="text" placeholder="Ваше имя" class="input")
+										.input-cont
+											.input-row
+												input(type="text" placeholder="Телефон" class="input")
+										.modal-send.btn--md.btn--mark Отправить
+						.modal-container__img(style="background-image:url('img/modal-5.jpg')")
+			//change === end
+
+			//true
+			.modal.modal--sm(data-modal="true")
+				.modal-content
+					.modal-close
+						+icon("close","icon")
+					.modal-container.modal-container--full
+						.modal-container__info
+							.modal-img
+								img(src="img/user-msg.svg", alt="")
+							.modal-title Благодарим за заявку
+							.modal-text Наш менеджер свяжется с вами в ближайшее время для уточнения деталей
+							.modal-send.modal-hide.btn--md.btn--mark Закрыть
+			//true === end
+
+			//price
+			.modal(data-modal="price")
+				.modal-content
+					.modal-close
+						+icon("close","icon")
+					.modal-container
+						.modal-container__img(style="background-image:url('img/modal-3.jpg')")
+						.modal-container__info
+							.modal-title Запрос стоимости дома
+							.modal-text Выберите вариант исполнения дома
+							.size
+								.size__el.size__el--active Каркас
+								.size__el Брус
+							form.validate-form( action="javascript:void(null);")
+								.input-cont
+									.input-row
+										input(type="text" placeholder="Ваше имя" class="input")
+								.input-cont
+									.input-row
+										input(type="text" placeholder="Телефон" class="input")
+								.modal-send.btn--md.btn--mark Отправить
+			//price === end
+
+			//order
 			.modal(data-modal="order")
 				.modal-content
 					.modal-close
 						+icon("close","icon")
-					.modal-title Оставьте заявку
-					.modal-text Обращаетесь к нам впервые? <br> Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!
-					form.validate-form( action="javascript:void(null);")
-						.input-row
-							input(type="text" name="name" placeholder="Ваше имя").input
-						.input-row
-							input(type="text" name="phone" placeholder="Ваш телефон").input
-						.input-row
-							textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
-						.agree-row
-							.check-el
-								label.style-label.style-label--checkbox
-									input(type="checkbox" name="agree").sytle-input
-									.sytle-input-element
-										+icon("checked","icon-check")
-									.sytle-input-text=text
-							.agree-row__text Согласен с
-								a(href="#") условиями обработки персональных данных
-						input(type="submit" value="Отправить заявку").modal-send
-			//success message
-			.modal(data-modal="true")
-				.modal-content.modal-content--true
-					.modal-close
-						+icon("close-fat","icon")
-					+icon("check-round","icon icon-msg")
-					.modal-text-true Сообщение отправленно
-
-	a(href="#" data-modal="order").modal-get Открыть модальное окно
-
+					.modal-container
+						.modal-container__img(style="background-image:url('img/modal-4.jpg')")
+						.modal-container__info
+							.modal-title Оставить заявку
+							.modal-text Какой из вариантов покупки вас может заинтересовать?
+								a(href="#")
+									+icon("info","icon icon--sm icon--green")
+							form.validate-form( action="javascript:void(null);")
+								.input-cont
+									.input-row
+										.dropdown
+											input(type="hidden" name="name" value="0")
+											.dropdown-current
+												.dropdown-current__val Выберите платежный план
+												+icon("arrow-down-fat","icon")
+											.dropdown-menu
+												.dropdown-menu__el(data-value="#") Платежный план «Новый» Платежный план «Новый» Платежный план «Новый»
+												.dropdown-menu__el(data-value="#") Платежный план «Скидка»
+												.dropdown-menu__el(data-value="#") Платежный план «Большой»
+												.dropdown-menu__el(data-value="#") Платежный план «Активный»
+								.input-cont
+									.input-row
+										input(type="text" placeholder="Ваше имя" class="input")
+								.input-cont
+									.input-row
+										input(type="text" placeholder="Телефон" class="input")
+								.modal-send.btn--md.btn--mark Отправить
+			//order === end

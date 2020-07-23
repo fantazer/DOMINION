@@ -44,7 +44,48 @@ mixin header(type)
 					.callback
 						.callback-icon
 						span Заказать звонок
-
+				.head-toggle.js-slide-block-toggle(data-menu="menu")
+					+icon("menu","icon icon-open")
+					+icon("close","icon icon-close")
+				.slide-block.slide-block--right.slide-block--menu(data-menu="menu")
+					.slide-block-wrap
+						a(href="tel:+7(812)467 45 17").phone
+							span +7 (812)&nbsp;
+							| 467 45 17
+						.callback
+							.callback-icon
+							span Заказать звонок
+						.slide-nav__el.js-switch-parrent
+							.slide-nav__el-title.js-switch.active(data-item="mobile-nav")
+								span Посёлки
+								+icon("arrow-down-fat","icon icon--sm")
+							.slide-nav__drop.js-switch-cont.active(data-item="mobile-nav")
+								a(href="#").slide-nav__drop-el Все посёлки
+								a(href="#").slide-nav__drop-el Ускуля
+								a(href="#").slide-nav__drop-el Елагино
+								a(href="#").slide-nav__drop-el Южные просторы
+						.slide-nav__el.js-switch-parrent
+							.slide-nav__el-title.js-switch(data-item="mobile-nav")
+								span Проекты домов
+								+icon("arrow-down-fat","icon icon--sm")
+							.slide-nav__drop.js-switch-cont(data-item="mobile-nav")
+								a(href="#").slide-nav__drop-el Все посёлки
+								a(href="#").slide-nav__drop-el Ускуля
+								a(href="#").slide-nav__drop-el Елагино
+								a(href="#").slide-nav__drop-el Южные просторы
+						.slide-nav__el.js-switch-parrent
+							.slide-nav__el-title.js-switch(data-item="mobile-nav")
+								span Готовые предложения
+								+icon("arrow-down-fat","icon icon--sm")
+							.slide-nav__drop.js-switch-cont(data-item="mobile-nav")
+								a(href="#").slide-nav__drop-el Все посёлки
+								a(href="#").slide-nav__drop-el Ускуля
+								a(href="#").slide-nav__drop-el Елагино
+								a(href="#").slide-nav__drop-el Южные просторы
+						.slide-nav__el
+							a(href="#").slide-nav__el-title Условия покупки
+						.slide-nav__el
+							a(href="#").slide-nav__el-title О компании
 
 
 	//block header end

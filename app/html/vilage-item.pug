@@ -69,11 +69,11 @@ include block_html/_include.pug
 
 							p Комплекс всех услуг по обслуживанию поселка возьмет на себя обслуживающая компания, обеспечивающая бесперебойную работу инженерных сетей, а также уборку территории, озеленения, вывоз мусора и др. Очень важным преимуществом поселка является и то, что он находится в 30 минутах езды от Санкт-Петербурга, что очень важно для работающей части населения. Такая перспектива позволяет покупателю рассчитывать на комфортное проживание в «Южных просторах» в будущем.
 					.info-col
-						.btn--md.btn--mark.btn--scroll Выберите свой участок
+						.btn--md.btn--mark.btn--scroll.btn--mobile Выберите свой участок
 		// about === end
 
 		// infro
-		.section-extend.section--gray#infro
+		.section-box.section--gray#infro
 			.main-cont
 				.info
 					.info-col-lg
@@ -112,7 +112,7 @@ include block_html/_include.pug
 		// infro === end
 
 		// area
-		.section-extend#area
+		.section-box#area
 			.main-cont
 				.row.row-3
 					.unit
@@ -146,12 +146,12 @@ include block_html/_include.pug
 						p до КАД – 2 км, <br> до ст. метро Проспект Ветеранов не более 30 км, <br> г. Ломоносов – 6 км, <br> г. Петергоф – 15 км, <br> г. Сестрорецк – 30 мин. езды на автомобиле.
 			.fluid-cont-el
 				.map
-					.map__el
+					.map__el(style="background-image:url('img/map.jpg')")
 						//put map her
 		// location === end
 
 		// plan
-		.section-extend#plan
+		.section-box#plan
 			.main-cont
 				.row.row-2
 					.col

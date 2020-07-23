@@ -138,21 +138,27 @@
 	margin: 30px 0
 
 .btn--full
+	+below(640px)
+		padding: 15px 5px
+		max-width 320px
 	width: 100%
 	display block
 
 .btn--scroll
+	+below(1024px)
+		width: auto
+		padding: 18px 60px
+	+below(640px)
+		width: 100%
+		padding: 18px 5px
 	padding: 18px 10px
 	width: 100%
 	transition background .4s
 
 .btn--fix
+	+below(640px)
+
+		min-width 100%
 	min-width 320px
 
-.gallery
-	display: grid
-	grid-gap 20px
-	grid-template-columns: repeat(4, 1fr)
-.gallery__el
-	bg-full()
-	padding: 33% 10%
+

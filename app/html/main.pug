@@ -43,7 +43,7 @@ include block_html/_include.pug
 												span Ломоносовский район, деревня Ускуля / 3 км от города
 											.example__text Клубный коттеджный поселок рядом с Верхним Меньшиковским парком города Ломоносов. Удачное местоположение и хорошие соседи — рядом гольфклуб, гостиничный комплекс, школа верховой езды.
 										.example-img
-											.row.row-2
+											.row.row-2--sm
 												.card
 													a(href="img/slide-3.jpg" style="background-image:url('img/item-1.jpg')").fancybox.card__img
 													.card-name
@@ -58,7 +58,7 @@ include block_html/_include.pug
 
 		// video block
 		.fluid-cont.section
-			.fluid-cont-el.fluid-cont-el--left
+			.fluid-cont-el.fluid-cont-el--left.order-mobile-2
 				.fluid-cont-wrap
 					.title.title--lg Коттеджные посёлки в Ленинградской области
 					.text
@@ -67,7 +67,7 @@ include block_html/_include.pug
 						p Основная сфера деятельности нашей компании – девелопмент: подготовка готовых проектов посёлков и реализация земельных участков c полным комплектом документов.
 
 						p Мы сформировали ценовую политику, дающую возможность каждому воплотить мечту о загородном доме.
-			.fluid-cont-el
+			.fluid-cont-el.order-mobile-1
 				a(href="https://youtu.be/t8VcBdgGNco" style="background-image:url('img/slide-5.jpg')").fluid-cont-img.fancybox
 					.play
 						+icon("play","icon")
@@ -93,8 +93,8 @@ include block_html/_include.pug
 		.fluid-cont.section
 			.fluid-cont-el
 				.map
-					.map__el
-						//put map her
+					.map__el(style="background-image:url('img/map.jpg')")
+						//put map her + remove image
 			.fluid-cont-el.fluid-cont-el--right
 				.fluid-cont-wrap
 					.border.border--top

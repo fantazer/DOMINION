@@ -54,10 +54,11 @@ mixin bread()
 mixin order()
   // order-banner
   .order-banner(style="background-image:url('img/banner-1.jpg')")
+    .order-banner-img(style="background-image:url('img/banner-1.jpg')")
     .order-banner-wrap
       .order-form.msg-box
         .msg-box-wrap
-          .title.title--lg Участок с домом и коммуникациями за <span class="type--green">2 400 000 руб</span>.
+          .title.title--lg Участок с домом и коммуникациями за <span class="type--green type--nowrap">2 400 000 руб</span>.
           .input-cont
             .input-row
               input(type="text" placeholder="Ваше имя" class="input")
@@ -69,5 +70,5 @@ mixin order()
 
 mixin map()
   .map.map--full
-    .map__el
+    .map__el(style="background-image:url('img/map.jpg')")
       //put map her

@@ -63,6 +63,9 @@ font-size 48px
 .type--gray
 	color $gray
 
+.type--nowrap
+	white-space nowrap
+
 h1
 	@extend .type--xl
 h2
@@ -111,6 +114,8 @@ p
 
 .text
 	p
+		+below(768px)
+			margin-bottom: 20px
 		line-height: 1.6
 		margin-bottom: 30px
 	ul
@@ -142,6 +147,9 @@ p
 .icon--mark
 	fill $mark
 
+.icon--green
+	fill $green
+
 .icon--gray
 	fill $gray
 // icons === end
@@ -152,6 +160,8 @@ p
 	margin-top: 0
 	margin-bottom: 20px
 .title--lg
+	+below(640px)
+		margin-bottom: 20px
 	@extend .type--lg
 	margin-bottom: 30px
 .title--md

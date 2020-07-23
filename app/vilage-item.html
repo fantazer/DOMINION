@@ -80,6 +80,72 @@
                             <span>Заказать звонок</span>
                         </div>
                     </div>
+                    <div class="head-toggle js-slide-block-toggle" data-menu="menu">
+                        <svg class="icon icon-open">
+                            <use xlink:href="#menu"></use>
+                        </svg>
+                        <svg class="icon icon-close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="slide-block slide-block--right slide-block--menu" data-menu="menu">
+                        <div class="slide-block-wrap">
+                            <a class="phone" href="tel:+7(812)467 45 17">
+                                <span>+7 (812)&nbsp;</span>467 45 17</a>
+                            <div class="callback">
+                                <div class="callback-icon"></div>
+                                <span>Заказать звонок</span>
+                            </div>
+                            <div class="slide-nav__el js-switch-parrent">
+                                <div class="slide-nav__el-title js-switch active" data-item="mobile-nav">
+                                    <span>Посёлки</span>
+                                    <svg class="icon icon--sm">
+                                        <use xlink:href="#arrow-down-fat"></use>
+                                    </svg>
+                                </div>
+                                <div class="slide-nav__drop js-switch-cont active" data-item="mobile-nav">
+                                    <a class="slide-nav__drop-el" href="#">Все посёлки</a>
+                                    <a class="slide-nav__drop-el" href="#">Ускуля</a>
+                                    <a class="slide-nav__drop-el" href="#">Елагино</a>
+                                    <a class="slide-nav__drop-el" href="#">Южные просторы</a>
+                                </div>
+                            </div>
+                            <div class="slide-nav__el js-switch-parrent">
+                                <div class="slide-nav__el-title js-switch" data-item="mobile-nav">
+                                    <span>Проекты домов</span>
+                                    <svg class="icon icon--sm">
+                                        <use xlink:href="#arrow-down-fat"></use>
+                                    </svg>
+                                </div>
+                                <div class="slide-nav__drop js-switch-cont" data-item="mobile-nav">
+                                    <a class="slide-nav__drop-el" href="#">Все посёлки</a>
+                                    <a class="slide-nav__drop-el" href="#">Ускуля</a>
+                                    <a class="slide-nav__drop-el" href="#">Елагино</a>
+                                    <a class="slide-nav__drop-el" href="#">Южные просторы</a>
+                                </div>
+                            </div>
+                            <div class="slide-nav__el js-switch-parrent">
+                                <div class="slide-nav__el-title js-switch" data-item="mobile-nav">
+                                    <span>Готовые предложения</span>
+                                    <svg class="icon icon--sm">
+                                        <use xlink:href="#arrow-down-fat"></use>
+                                    </svg>
+                                </div>
+                                <div class="slide-nav__drop js-switch-cont" data-item="mobile-nav">
+                                    <a class="slide-nav__drop-el" href="#">Все посёлки</a>
+                                    <a class="slide-nav__drop-el" href="#">Ускуля</a>
+                                    <a class="slide-nav__drop-el" href="#">Елагино</a>
+                                    <a class="slide-nav__drop-el" href="#">Южные просторы</a>
+                                </div>
+                            </div>
+                            <div class="slide-nav__el">
+                                <a class="slide-nav__el-title" href="#">Условия покупки</a>
+                            </div>
+                            <div class="slide-nav__el">
+                                <a class="slide-nav__el-title" href="#">О компании</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -194,14 +260,14 @@
                             </div>
                         </div>
                         <div class="info-col">
-                            <div class="btn--md btn--mark btn--scroll">Выберите свой участок</div>
+                            <div class="btn--md btn--mark btn--scroll btn--mobile">Выберите свой участок</div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- about === end-->
             <!-- infro-->
-            <div class="section-extend section--gray" id="infro">
+            <div class="section-box section--gray" id="infro">
                 <div class="main-cont">
                     <div class="info">
                         <div class="info-col-lg">
@@ -339,7 +405,7 @@
             </div>
             <!-- infro === end-->
             <!-- area-->
-            <div class="section-extend" id="area">
+            <div class="section-box" id="area">
                 <div class="main-cont">
                     <div class="row row-3">
                         <div class="unit">
@@ -387,7 +453,7 @@
                 </div>
                 <div class="fluid-cont-el">
                     <div class="map">
-                        <div class="map__el">
+                        <div class="map__el" style="background-image:url('img/map.jpg')">
                             <!--put map her-->
                         </div>
                     </div>
@@ -395,7 +461,7 @@
             </div>
             <!-- location === end-->
             <!-- plan-->
-            <div class="section-extend" id="plan">
+            <div class="section-box" id="plan">
                 <div class="main-cont">
                     <div class="row row-2">
                         <div class="col">
@@ -451,11 +517,12 @@
             <!-- gallery === end-->
             <!-- order-banner-->
             <div class="order-banner" style="background-image:url('img/banner-1.jpg')">
+                <div class="order-banner-img" style="background-image:url('img/banner-1.jpg')"></div>
                 <div class="order-banner-wrap">
                     <div class="order-form msg-box">
                         <div class="msg-box-wrap">
                             <div class="title title--lg">Участок с домом и коммуникациями за
-                                <span class="type--green">2 400 000 руб</span>.</div>
+                                <span class="type--green type--nowrap">2 400 000 руб</span>.</div>
                             <div class="input-cont">
                                 <div class="input-row">
                                     <input class="input" type="text" placeholder="Ваше имя" />

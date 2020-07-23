@@ -55,7 +55,11 @@ body
 	.logo--sm
 		display block
 	.logo
-		width: auto
+		+below(768px)
+			height: 50px
+			img
+				height: 50px
+				width: 100%
 		height: 80px
 // animate top menu === end
 
@@ -107,12 +111,14 @@ body
 	position: absolute
 	top: 0
 	left: 0
-	background: #18191da1
+	background: #000000b3
 	width: 100%
 	height: 100vh
 	min-height 100vh
 
 .modal
+	+below(960px)
+		width: 480px
 	+below(768px)
 		width: 100%
 		box-shadow 0 0 0
@@ -122,24 +128,25 @@ body
 	position: absolute
 	opacity 0
 	transition transform .6s, opacity .8s
-	max-width 400px
+	width 900px
 	left -9999px
 	top -9999px
 	.order__row
 		margin-bottom: 20px
 		border-bottom 0
 
+.modal--sm
+	width 460px
+
 .modal-content
-	+below(640px)
+	+below(960px)
 		height: 100%
 		padding: 20px
-		overflow-y scroll
+		overflow-y auto
 		width: 95%!important
 		margin: 20px auto
 	background: white
 	position: relative
-	padding: 40px 45px
-	br(40px)
 
 .modal__show
 	max-height 100%
@@ -153,24 +160,23 @@ body
 	will-change: transform, opacity
 
 .modal-close
-	+below(768px)
-		top 12px
-		right 12px
+	+below(640px)
+		top 15px
+		right: 15px
 	position: absolute
-	top: 20px
-	right: 20px
+	top: 9px
+	right: 9px
 	cp()
-	size 50px
-	br(20px)
 	flex(mid)
 	z-index 10
-	background: #f8f8f8
 	&:hover
 		.icon
 			opacity: 1
 	.icon
+		+below(640px)
+			size 14px
 		tr()
-		size 12px
+		size 18px
 		fill black
 		opacity:.3
 
@@ -178,6 +184,7 @@ body
 	transform scale(.9)
 	opacity 0
 	transition transform .6s, opacity .8s
+
 .modal-open
 	overflow: hidden
 	overflow-y: scroll
@@ -199,24 +206,63 @@ body
 	+below(768px)
 		font-size: 20px
 	margin-bottom: 20px
-	text-align: center
-	@extend .type--xl
+	@extend .type--lg
 	font-weight: 700
 
 .modal-text
 	+below(768px)
 		width: 100%
 		font-size: 12px
-	text-align: center
 	margin: 20px auto
 	//width: 80%
 	line-height: 1.6
 
 
 .modal-send
+	+below(640px)
+		padding: 18px 5px
 	@extend .btn--md
 	@extend .btn--mark
 	width: 100%
+
+.modal-container
+	f()
+	position relative
+	&:before
+		+above(960px)
+			content ''
+			transform: translateZ(-1px)
+			position absolute
+			width calc(100% + 40px)
+			height calc(100% + 40px)
+			top -20px
+			left -20px
+			border 1px solid white
+			opacity: .4
+.modal-container--full
+	display block
+	.modal-container__img
+		width: 100%
+		padding: 10% 10%
+	.modal-container__info
+		width: 100%
+.modal-container__img
+	+below(960px)
+		display none
+	width: 50%
+	bg-full()
+	padding: 20% 10%
+.modal-container__info
+	+below(960px)
+		width: 100%
+	+below(640px)
+		padding: 20px 10px
+	width: 50%
+	padding: 40px
+	position relative
+.modal-img
+	flex(mid)
+	margin-bottom: 30px
 // modal === end
 
 // cookie
@@ -255,10 +301,16 @@ body
 // cookie === end
 
 .header-wrap
+	+below(1024px)
+		border-bottom 1px solid $snow
 	background: white
 	box-shadow 0 5px 10px rgba(0, 0, 0, 0.05)
 	z-index 10
 .header
+	+below(768px)
+		height: 50px
+		margin-left: -10px
+		width calc(100% + 20px)
 	height: 80px
 	f()
 	align-items center
@@ -267,14 +319,29 @@ body
 	position: absolute
 	background: #ffffffb8
 	.logo
+		+below(1280px)
+			width: 175px
+		+below(768px)
+			height: 50px
+			img
+				height: 50px
 		margin-right: 20px
 		position relative
 		width: 200px
 		display inline-block
 		height: 80px
+		img
+			+below(768px)
+				width: 80px
 	.logo--sm
+		+below(768px)
+			width: 175px
+		width: auto
 		display none
 .logo
+	+below(768px)
+		img
+			height: 50px
 		margin-right: 10px
 .logo--main
 	img
@@ -282,10 +349,18 @@ body
 		width: 100%
 		top 0
 		left 0
+		height: auto!important
 .header-nav
+	+below(1280px)
+		width: 65%
+	+below(1024px)
+		display none
 	flex(between)
 	width: 60%
+	margin-left: 10px
 .header-nav__el
+	+below(1280px)
+		font-size: 13px
 	position relative
 	padding: 10px 10px
 	cp()
@@ -329,18 +404,29 @@ body
 	&:hover
 		color $green
 .header-contact
+	+below(1024px)
+		f()
+		align-items center
+		flex-flow row
+		margin-right: 10px
+	+below(640px)
+		display none
 	margin-left auto
 	f()
 	fl()
 	align-items: flex-end
 	.phone
+		+below(1024px)
+			margin 0 10px 0 0
 		margin-bottom: 5px
 .phone
 	@extend .type--md
 	font-weight 700
+	white-space nowrap
 	span
 		font-size 16px
 .callback
+
 	f()
 	align-items center
 	cp()
@@ -366,11 +452,14 @@ body
 
 // main-slider
 .main-slider__el
+	+above(1025px)
+		-webkit-filter unquote("blur(3px)")
+	+below(1024px)
+		margin: 0
 	bg-full()
 	position relative
 	width: 100%
 	height: 100vh
-	-webkit-filter unquote("blur(3px)")
 	margin: 0 10px
 	margin-bottom: 40px
 .main-slider__el.slick-active
@@ -387,8 +476,19 @@ body
 		f()
 		align-items center
 .slider-banner
+	+below(960px)
+		width: 100%
+		max-width 100%
+	+below(640px)
+		.btn--md
+			padding: 10px
+			width: 100%
 	max-width 460px
 .msg-box
+	+below(640px)
+		padding: 20px
+		margin-left: 0
+		margin-top: 0
 	background-color #ffffff
 	opacity 0.9
 	padding: 30px 40px
@@ -398,6 +498,8 @@ body
 	position relative
 	transform-style: preserve-3d
 	&:before
+		+below(640px)
+			display none
 		content ''
 		transform: translateZ(-1px)
 		position absolute
@@ -411,10 +513,13 @@ body
 .slider-banner--lg
 	max-width 560px
 .slider-banner__title
+
 	@extend .type--xl
 	font-weight 700
 	margin-bottom: 20px
 .slider-banner__text
+	+below(640px)
+		font-size: 14px
 	font-weight 700
 	line-height: 1.4
 	margin-bottom: 20px
@@ -439,6 +544,13 @@ body
 //Навигация снаружи
 .slider-wrap--simple
 	.slider-control
+		+below(1440px)
+			top -60px
+			position: static
+			display inline-flex
+			size 40px
+			margin-bottom: 20px
+			margin-left auto
 		round()
 		flex(mid)
 		tr(all)
@@ -452,10 +564,17 @@ body
 		&:hover
 			background: darken($snow,3)
 		.icon
+			+below(768px)
+				size 12px
 			size 18px
 	.slider-control--left
+		+below(1440px)
+			right: 100px
+			left initial
 		left -80px
 	.slider-control--right
+		+below(1440px)
+			right: 0
 		right -80px
 //Навигация снаружи end
  
@@ -487,9 +606,9 @@ body
 // === for custom navigation === 
  
 //=== Внешний вид пагинации ===
+.slick-dotted.slick-slider
+	margin-bottom: 0
 .slick-dots
-	+below(720px)
-		bottom -20px
 	width: 100%
 	display: flex !important
 	align-items: center
@@ -545,6 +664,8 @@ body
 
 // grid
 .row
+	+below(768px)
+		grid-gap 20px
 	display: grid
 	grid-gap 40px
 .row--clear
@@ -554,14 +675,26 @@ body
 		grid-template-columns: 1fr
 	grid-template-columns: repeat(2, 1fr)
 
+.row-2--sm
+	grid-template-columns: repeat(2, 1fr)
 
 .row-3
+	grid-gap 30px
+	+below(768px)
+		grid-gap 20px
+		grid-template-columns: repeat(2, 1fr)
+	+below(480px)
+		grid-template-columns: 1fr
 	grid-template-columns: repeat(3, 1fr)
 
 
 .fluid-cont
+	+below(768px)
+		fw()
 	f()
 .fluid-cont-el
+	+below(768px)
+		width: 100%
 	width: 50%
 	.map
 		height: 100%
@@ -569,6 +702,10 @@ body
 .fluid-cont-el--left
 	f()
 	.fluid-cont-wrap
+		+below(768px)
+			max-width 100%
+			width: 100%
+			padding: 30px 10px
 		max-width 640px
 		margin-left auto
 		padding: 40px 40px 40px 10px
@@ -576,6 +713,10 @@ body
 .fluid-cont-el--right
 	f()
 	.fluid-cont-wrap
+		+below(768px)
+			max-width 100%
+			width: 100%
+			padding: 30px 10px
 		max-width 640px
 		margin-right auto
 		padding: 40px 10px 40px 40px
@@ -584,6 +725,8 @@ body
 	background: $snow
 
 .fluid-cont-img
+	+below(768px)
+		padding: 30% 10%
 	bg-full()
 	padding: 25% 10%
 	position relative
@@ -592,11 +735,15 @@ body
 // grid === end
 
 .box-img
+	+below(640px)
+		margin-left -10px
+		width calc(100% + 20px)
 	bg-full()
 	padding: 32% 10%
 .position
 	margin-bottom: 10px
 	color $gray
+	line-height: 1.6
 	.icon
 		fill $gray
 
@@ -606,6 +753,8 @@ body
 		fill $green
 
 .example
+	+below(768px)
+		margin-bottom: 30px
 	margin-bottom: 90px
 
 .card__img
@@ -663,19 +812,21 @@ a.link
 .border
 	position relative
 	transform-style: preserve-3d
-	&:before
-		content ''
-		width: 100%
-		height: 100%
-		border 1px solid $border-color
-		position absolute
-		transform: translateZ(-1px)
-		z-index -1
+	+above(769px)
+		&:before
+			content ''
+			width: 100%
+			height: 100%
+			border 1px solid $border-color
+			position absolute
+			transform: translateZ(-1px)
+			z-index -1
 .border--bottom
-	&:before
-		content ''
-		right: -15px
-		bottom -15px
+	+above(769px)
+		&:before
+			content ''
+			right: -15px
+			bottom -15px
 
 .border--top
 	&:before
@@ -692,6 +843,9 @@ a.link
 .play
 	position absolute
 	.icon
+		+below(768px)
+			size 60px
+
 		&:hover
 			fill $mark
 		size 80px
@@ -702,19 +856,36 @@ a.link
 		round()
 
 .section
+	+below(1024px)
+		margin-bottom: 30px
 	margin-bottom: 60px
 .section-extend
+	+below(1024px)
+		padding: 30px 0
+		//margin-bottom: 30px
+		margin-bottom: 0
 	padding: 60px 0
 	margin-bottom: 60px
 .section-box
+	+below(1024px)
+		padding: 30px 0
 	padding: 60px 0
 .section--gray
 	background: $snow
 .advant
+	+below(768px)
+		grid-gap 10px
+	+below(640px)
+		display block
+		width calc(100% + 20px)
+		margin-left: -10px
+		margin-top: -30px
 	display: grid
 	grid-gap 40px
 	grid-template-columns: repeat(3, 1fr)
 .advant__el
+	+below(640px)
+		margin-bottom: 5px
 	bg-full()
 	padding: 30% 10%
 	f()
@@ -730,8 +901,19 @@ a.link
 	color white
 
 .order-banner
+	+below(640px)
+		background: none!important
 	bg-full()
+
+.order-banner-img
+	+above(640px)
+		display none
+	bg-full()
+	padding: 30% 10%
+	min-height 300px
 .order-banner-wrap
+	+below(640px)
+		padding: 0
 	center(1280px,10px)
 	f()
 	padding: 100px 0
@@ -740,6 +922,9 @@ a.link
 	position relative
 
 .order-form
+	+below(640px)
+		padding: 10px
+		margin: 30px 0
 	max-width 460px
 	margin-top: 0
 	margin-left: auto
@@ -747,9 +932,19 @@ a.link
 	margin-right: 30px
 
 .map
+	+below(768px)
+		padding: 30% 10%
+		min-height 350px
 	position relative
 	padding: 26% 10%
-	background: #e6e6e6
+
+.map__el
+	position absolute
+	top 0
+	left 0
+	height: 100%
+	width: 100%
+	bg-full()
 
 .map--sm
 	padding: 20% 10%
@@ -814,6 +1009,8 @@ a.link
 	color white
 	padding: 50px 0
 .footer
+	+below(1024px)
+		fw()
 	f()
 	justify-content: space-between
 	a
@@ -824,17 +1021,43 @@ a.link
 		&:hover
 			color $green
 .footer-copy
+	+below(1024px)
+		width: 50%
+		margin-bottom: 15px!important
+		display inline-block
+	+below(640px)
+		width: 100%
 	width: 20%
 .footer-adr
+	+below(1024px)
+		width: 50%
+		margin-bottom: 15px!important
+		display inline-block
+	+below(640px)
+		width: 100%
 	width: 25%
 	line-height: 1.4
 .footer-phone
+	+below(1024px)
+		width: 50%
+		margin-bottom: 15px!important
+		display inline-block
+	+below(640px)
+		width: 100%
 	width: 15%
 .footer-mail
+	+below(1024px)
+		width: 50%
+		margin-bottom: 15px!important
+		display inline-block
+	+below(640px)
+		width: 100%
 	width: 15%
 // footer === end
 
 .bread
+	+below(768px)
+		margin-bottom: 20px
 	margin-bottom: 30px
 	font-size: 14px
 	a span
@@ -845,6 +1068,8 @@ a.link
 	.title
 		margin-bottom: 10px
 	.position
+		+below(768px)
+			margin-bottom: 20px
 		margin-bottom: 30px
 
 
@@ -864,6 +1089,8 @@ a.link
 	margin-bottom: 20px
 
 .kind-wrap
+	+below(768px)
+		margin: 30px 0
 	margin-bottom: 40px
 
 .kind-wrap--mark
@@ -871,13 +1098,21 @@ a.link
 		fill $green
 
 .tab-link-wrap
+	+below(768px)
+		margin-bottom: 30px
 	border-top 1px solid $border-color
 	border-bottom 1px solid $border-color
 	margin-bottom: 50px
 .tab-link
+	+below(1024px)
+		width: 100%
+		overflow auto
 	f()
 	flex(between)
 .tab-link__el
+	+below(1024px)
+		padding: 15px
+	white-space nowrap
 	tr()
 	padding: 25px 20px
 	display inline-block
@@ -889,23 +1124,56 @@ a.link
 	margin-left: -1px
 	&:hover
 		color $green
-
+.tab-head-mobile
+	+above(769px)
+		display none
+	font-size: 16px
+	line-height: 1.4
+	padding: 15px 15px 15px 0
+	flex(between)
+	span
+		width calc(100% - 30px)
+	.icon
+		tr()
+		size 16px
+.tab-head-mobile.active
+	color $green
+	.icon
+		fill $green
+		transform rotate(45deg)
+.tab-cont-content
+	+below(768px)
+		display none
+		padding-bottom: 30px
 .info
+	+below(1024px)
+		fw()
 	f()
 	justify-content space-between
 	align-items: stretch
 .info-col-lg
+	+below(1024px)
+		width: 100%
 	width: 65%
 .info-col
+	+below(1024px)
+		width: 100%
 	width: 27%
 	position relative
 
 .list-filter
+	+below(768px)
+		margin-bottom: 10px
 	f()
 	fw()
 	align-items center
 	margin-bottom: 20px
 .list-filter__el
+	+below(768px)
+		padding: 5px 15px
+		font-size: 12px
+		margin-right: 5px
+		margin-bottom: 5px
 	border 1px solid $border-color
 	padding: 8px 25px
 	margin-right: 10px
@@ -923,6 +1191,8 @@ a.link
 
 
 .vendor-img
+	+below(768px)
+		max-width 100px
 	max-width 170px
 
 .filter-wrap
@@ -951,6 +1221,12 @@ a.link
 	.is-close
 		display block
 .filter
+	+below(1024px)
+		grid-template-columns: repeat(3, 1fr)
+	+below(768px)
+		grid-template-columns: repeat(2, 1fr)
+	+below(640px)
+		grid-template-columns: 1fr
 	display: grid
 	grid-gap 20px
 	grid-template-columns: repeat(5, 1fr)
@@ -961,6 +1237,9 @@ a.link
 	margin-bottom: 20px
 .filter-list
 	.check-el
+		+below(640px)
+			font-size: 12px
+
 		margin-bottom: 20px
 		font-weight: 600
 		sup
@@ -1026,7 +1305,17 @@ a.link
 	.gallery-slider-wrap
 		margin-top: 0
 
+.gallery
+	+below(1024px)
+		grid-gap 10px
+		grid-template-columns: repeat(auto-fill, minmax(8rem,1fr))
+	display: grid
+	grid-gap 20px
+	grid-template-columns: repeat(4, 1fr)
+
 .gallery__el
+	+below(640px)
+		br(4px)
 	bg-full()
 	padding: 34% 10%
 	br(10px)
@@ -1038,6 +1327,8 @@ a.link
 	border 2px solid transparent
 .gallery-slider-nav
 	.slick-slide
+		+below(640px)
+			margin: 0 5px
 		margin: 0 10px
 	.slick-current
 		tr()
@@ -1051,11 +1342,14 @@ a.link
 	margin-bottom 10px
 
 .gallery-slider-wrap
+	+below(640px)
+		margin-bottom: 20px
 	margin: 40px 0
 
 .card-descr
 	+below(768px)
 		width: 100%
+		margin-left: 0
 	width: 400px
 	margin-left: 20px
 // item === end
@@ -1063,10 +1357,11 @@ a.link
 
 // tab
 .js-tab-info
-	position: absolute
-	top 0
-	left: -9999px
-	opacity:0
+	+above(769px)
+		position: absolute
+		top 0
+		left: -9999px
+		opacity:0
 
 .js-tab-info.active
 	opacity: 1
@@ -1105,6 +1400,8 @@ a.link
 	margin-right: 10px
 .card-size__el-icon
 	.icon
+		+below(768px)
+			size 40px
 		size 54px
 //.card-size__text
 .card-type
@@ -1124,30 +1421,56 @@ a.link
 	&:nth-child(odd)
 		background: $snow
 .card-get
+	+below(640px)
+		fl()
+
 	flex(between)
 	.btn--md
+		+below(640px)
+			width: 100%
 		width: 48%
 	.card-get__price
+		+below(640px)
+			margin-bottom: 10px
 		padding: 15px 10px
 	.card-get__change
+		+below(640px)
+			padding: 15px 10px
 		padding: 10px 5px
 .card-info
+	+below(1280px)
+		width: 100%
+	+below(1024px)
+		margin-bottom: 30px
 	width calc(100% - 440px)
 	margin-bottom: 60px
 .card-callback
+	+below(640px)
+		display block
 	flex(between)
 .card-callback__text
+	+below(640px)
+		margin-bottom: 20px
 	font-weight: 700
 	line-height: 1.4
 	margin-right: 20px
 .tab__head-wrap
+	+below(768px)
+		display none
 	border-bottom 1px solid $border-color
 //.main-cont
 .tab
 	margin: 20px 0 50px 0
 .tab__head
+	+below(768px)
+		display none
 	f()
 .tab__head-el
+	+below(1200px)
+		padding: 15px 20px
+	+below(1024px)
+		padding: 15px
+		font-size: 12px
 	padding: 30px
 	flex(mid)
 	margin-bottom: -1px
@@ -1164,9 +1487,19 @@ a.link
 	background: white
 //.tab-info-wrap
 .tab-cont
-	padding: 30px
+	+below(768px)
+		padding: 0
+		border-bottom 1px solid $border-color
+	padding: 30px 30px 0 30px
 
 .payment-adv
+	+below(1024px)
+		grid-gap 20px
+	+below(768px)
+		margin: 30px 0
+		grid-template-columns: repeat(2, 1fr)
+	+below(640px)
+		grid-template-columns: 1fr
 	display: grid
 	grid-gap 30px
 	grid-template-columns: repeat(3, 1fr)
@@ -1186,7 +1519,8 @@ a.link
 // accordion
 .accordion
 	+below(640px)
-		width calc(100% + 30px)
+		width 100%
+		margin-bottom: 30px
 	background: white
 .accordion__el
 	border 1px solid #e5e5e5
@@ -1212,6 +1546,7 @@ a.link
 	+below(640px)
 		font-weight: 400
 		line-height: 1.6
+		font-size: 14px
 	@extend .type--md
 	width: 80%
 	font-size: 18px
@@ -1243,7 +1578,7 @@ a.link
 
 .accordion__el-content
 	+below(640px)
-		padding: 0 30px 30px 30px
+		padding:20px
 	padding: 40px
 	display: none
 	p
@@ -1266,6 +1601,12 @@ a.link
 // accordion === end
 
 .payment-kind
+	+below(1280px)
+		grid-gap 20px
+	+below(960px)
+		grid-template-columns: repeat(2, 1fr)
+	+below(480px)
+		grid-template-columns: 1fr
 	display: grid
 	grid-gap 30px
 	grid-template-columns: repeat(4, 1fr)
@@ -1302,6 +1643,10 @@ a.link
 .payment-kind__el-img
 	margin-bottom: 20px
 .payment-kind__el-title
+	+below(1280px)
+		font-size: 14px
+	+below(640px)
+		font-size: 18px
 	@extend .type--md
 	font-weight 700
 	color white
@@ -1309,10 +1654,18 @@ a.link
 	line-height: 1.6
 
 .payment-type
+	+below(1200px)
+		grid-template-columns: repeat(2, 1fr)
+		grid-gap 20px
+	+below(640px)
+		grid-gap 10px
+		grid-template-columns: 1fr
 	display: grid
 	grid-gap 30px
 	grid-template-columns: repeat(4, 1fr)
 .payment-type__el
+	+below(640px)
+		padding: 20px 15px
 	padding: 30px
 	background: white
 	border 1px solid $gray-light
@@ -1324,17 +1677,25 @@ a.link
 	font-size: 14px
 
 .about
+	+below(640px)
+		padding: 30px 0
 	f()
 	fw()
 .about-col
+	+below(640px)
+		width: 100%
 	width: 50%
 
 .about-col__img
+	+below(640px)
+		padding: 40% 10%
 	width: 100%
 	height: 100%
 	bg-full()
 
 .about-col__text
+	+below(640px)
+		padding: 0 0 30px 0
 	padding: 30px
 	p
 		&:last-child
@@ -1352,3 +1713,213 @@ a.link
 .contact-row__el
 	display block
 	font-weight: 700
+
+
+// drop
+.dropdown
+	width: 100%
+	display inline-block
+	br(30px)
+	tr()
+	position relative
+	border 1px solid $border-color
+	outline none!important
+	max-width 100%
+.dropdown-current
+	tr(all)
+	padding 18px 30px
+	cursor pointer
+	padding-right 25px
+	font-weight: 700
+	display: table;
+	table-layout: fixed;
+	width: 100%
+	.icon
+		position absolute
+		top calc(50% - 6px)
+		right 20px
+		size 12px
+		tr()
+.dropdown-current__val
+	display: table-cell
+	white-space nowrap
+	overflow hidden
+	text-overflow ellipsis
+	width: 100%
+.dropdown.active
+	border-radius 30px 30px 0 0
+	.icon
+		transform rotate(180deg)
+
+.dropdown-menu
+	position absolute
+	background-color #fff
+	width calc(100% + 2px)
+	left -1px
+	margin-top -1px
+	border-radius 0 0 30px 30px
+	overflow hidden
+	display none
+	max-height 250px
+	overflow-y auto
+	z-index 10
+	border 1px solid $border-color
+.dropdown-menu__el
+	padding 15px 30px
+	cp()
+	tr()
+	border-bottom 1px solid $border-color
+	white-space nowrap
+	overflow hidden
+	text-overflow ellipsis
+	//background: #f9f9f9
+	&:last-child
+		border 0
+	&:hover
+		background: white
+		color black
+// drop === end
+
+.size
+	display: grid
+	grid-gap 5px
+	grid-template-columns: repeat(auto-fit, minmax(3rem,1fr))
+	br(30px)
+	border 1px solid $border-color
+	margin-bottom: 20px
+.size__el
+	+below(480px)
+		font-weight:700
+	cp()
+	tr()
+	font-weight: 700
+	padding: 18px 30px
+	text-align: center
+	line-height: 1
+	&:first-child
+		border-radius 30px 0 0 30px
+	&:last-child
+		border-radius 0 30px 30px 0
+	&:hover
+		border-color $green
+.size__el--active
+	background: $green
+	color white
+
+
+// slider menu
+.head-toggle
+	+below(640px)
+		margin-left auto
+	flex(mid)
+	cp()
+	margin-right: 10px
+	+above(1025px)
+		display: none
+	.icon
+		+below(640px)
+			size 20px
+		size 25px
+		fill black
+	.icon-close
+		display: none
+
+.head-toggle.slide-block-toggle--open
+	.icon-close
+		display: block
+	.icon-open
+		display: none
+
+.slide-block
+	+below(768px)
+		top 50px
+		height: calc(100% - 50px) // Высота шапки
+	+below(480px)
+		width: 100%
+	border-top 1px solid $snow
+	position: fixed
+	top 80px // Высота шапки
+	width: 360px
+	tr(all)
+	height: calc(100% - 80px) // Высота шапки
+	z-index 100
+	background: white
+.slide-block--left
+	left 0
+	transform translateX(-100%)
+
+.slide-block--right
+	right 0
+	transform translateX(100%)
+
+.slide-block--open
+	transform translateX(0%)
+
+.slide-block-wrap
+	padding: 30px
+	.phone
+		+above(640px)
+			display none
+		margin-bottom: 10px
+		display inline-block
+	.callback
+		+above(640px)
+			display none
+		margin-bottom: 10px
+
+.slide-nav__el
+	position relative
+	cp()
+	z-index 2
+	&:hover
+		.slide-nav__el-title
+			color $green
+.slide-nav__el--sub
+	tr()
+	.slide-nav__el-title
+		border-bottom 1px dashed #c0c5cc
+	&:hover
+		background: white
+		box-shadow 0 5px 10px rgba(0, 0, 0, 0.07)
+		.slide-nav__el-title
+			border-bottom 1px dashed transparent
+			color $gray
+		.slide-nav__drop
+			z-indez 2
+			opacity: 1
+			transform translateY(0)
+			left 0
+.slide-nav__el-title
+	font-weight: 700
+	padding: 10px 0
+	display inline-block
+	.icon
+		size 12px
+		margin-left: 5px
+		tr()
+.slide-nav__el-title.active
+	color $green
+	.icon
+		fill $green
+		transform rotate(180deg)
+.slide-nav__drop
+	display none
+	padding: 10px 0
+.slide-nav__drop.active
+	display block
+.slide-nav__drop-el
+	display block
+	margin-bottom: 20px
+	&:last-child
+		margin-bottom: 0
+	&:hover
+		color $green
+
+// slider menu === end
+
+.order-mobile-2
+	+below(640px)
+		order 2
+.order-mobile-1
+	+below(640px)
+		order 1

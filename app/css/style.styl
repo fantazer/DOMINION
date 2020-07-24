@@ -361,6 +361,7 @@ body
 .header-nav__el
 	+below(1280px)
 		font-size: 13px
+		padding: 5px
 	position relative
 	padding: 10px 10px
 	cp()
@@ -383,7 +384,8 @@ body
 			opacity: 1
 			transform translateY(0)
 			left 0
-//.header-nav__el-title
+.header-nav__el-title
+	white-space nowrap
 .header-nav__drop
 	transition opacity .6s, transform .6s
 	position absolute
@@ -544,7 +546,7 @@ body
 //Навигация снаружи
 .slider-wrap--simple
 	.slider-control
-		+below(1440px)
+		+below(1280px)
 			top -60px
 			position: static
 			display inline-flex
@@ -569,11 +571,15 @@ body
 			size 18px
 	.slider-control--left
 		+below(1440px)
+			left -40px
+		+below(1280px)
 			right: 100px
 			left initial
 		left -80px
 	.slider-control--right
 		+below(1440px)
+			right -40px
+		+below(1280px)
 			right: 0
 		right -80px
 //Навигация снаружи end
@@ -925,6 +931,7 @@ a.link
 	+below(640px)
 		padding: 10px
 		margin: 30px 0
+		max-width 100%
 	max-width 460px
 	margin-top: 0
 	margin-left: auto
@@ -1058,6 +1065,7 @@ a.link
 .bread
 	+below(768px)
 		margin-bottom: 20px
+		font-size: 12px
 	margin-bottom: 30px
 	font-size: 14px
 	a span
@@ -1530,10 +1538,10 @@ a.link
 		.accordion__el-head-icon
 			&:before
 				content ''
-				background: $mark
+				background: $green
 			&:after
 				content ''
-				background: $mark
+				background: $green
 
 .accordion__el-head
 	+below(640px)
@@ -1811,6 +1819,7 @@ a.link
 .head-toggle
 	+below(640px)
 		margin-left auto
+		margin-right: 20px
 	flex(mid)
 	cp()
 	margin-right: 10px
@@ -1918,8 +1927,8 @@ a.link
 // slider menu === end
 
 .order-mobile-2
-	+below(640px)
+	+below(768px)
 		order 2
 .order-mobile-1
-	+below(640px)
+	+below(768px)
 		order 1

@@ -5,7 +5,9 @@ include block_html/_include.pug
 	+header()
 	.content
 		+bread()
-		.section
+		.section.content-paralax
+			.paralax-el.paralax-el__1
+				img(src="img/deer-right.svg", alt="" class="thumbnail")
 			.main-cont
 				// village intro
 				.row.row-2
@@ -112,7 +114,9 @@ include block_html/_include.pug
 		// infro === end
 
 		// area
-		.section-box#area
+		.section-box#area.content-paralax
+			.paralax-el.paralax-el__2
+				img(src="img/deer-left.svg", alt="" class="thumbnail")
 			.main-cont
 				.row.row-3
 					.unit

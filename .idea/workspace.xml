@@ -19,50 +19,62 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add mobile version">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add deploy version">
+      <change afterPath="$PROJECT_DIR$/app/img/deer-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/deer-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/js/simpleParallax.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/error-500.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/block_html/_script.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_script.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/error-404.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/error-500.pug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/item.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/item.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/project.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/project.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/vilage-item.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/vilage-item.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/vilage.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/vilage.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/advant-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/advant-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/advant-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/advant-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/advant-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/advant-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/css/sprite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/house-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/house-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/item-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/item-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/item-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/item-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/close.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/plus.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/restroom.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/restroom.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/sprite.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/village-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/village-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/village-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/village-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/village-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/village-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/elements.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/elements.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/error-404.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/error-404.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/error-500.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/error-500.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/index.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/index.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/item.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/project.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/project.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/vilage-item.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/vilage-item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/vilage.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/vilage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/project.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/vilage-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/vilage-item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/vilage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/vilage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/advant-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/advant-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/advant-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/advant-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/advant-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/advant-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/css/sprite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/house-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/house-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/item-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/item-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/item-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/item-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/pack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/svg/sprite.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/village-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/village-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/village-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/village-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/village-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/village-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/elements.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/elements.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/error-404.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/error-404.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/error-500.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/error-500.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/index.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/index.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/item.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/project.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/project.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/vilage-item.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/vilage-item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/vilage.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/vilage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/combined.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/combined.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/script-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/project.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/vilage-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/vilage-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/vilage.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/vilage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,20 +101,20 @@
     <property name="SearchEverywhereHistoryKey" value="clone&#9;ACTION&#9;Git.Clone" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/app/bower/page-scroll-to-id/bower.json" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/img/svg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\PROJECT\WORK\DOMINION\app\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\PROJECT\WORK\DOMINION\app\img\svg" />
       <recent name="E:\PROJECT\WORK\DOMINION\app\img" />
+      <recent name="E:\PROJECT\WORK\DOMINION\app\js" />
+      <recent name="E:\PROJECT\WORK\DOMINION\app\img\svg" />
       <recent name="E:\PROJECT\WORK\DOMINION\app\bower" />
       <recent name="E:\PROJECT\WORK\DOMINION\app\fonts" />
-      <recent name="E:\PROJECT\WORK\DOMINION" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PROJECT\WORK\DOMINION\app\img" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -199,7 +211,8 @@
       <workItem from="1595345666182" duration="1182000" />
       <workItem from="1595410480826" duration="19321000" />
       <workItem from="1595505033490" duration="23267000" />
-      <workItem from="1595579743890" duration="5775000" />
+      <workItem from="1595579743890" duration="6445000" />
+      <workItem from="1595853491623" duration="5107000" />
     </task>
     <task id="LOCAL-00001" summary="fix browsersynk">
       <created>1515935102048</created>
@@ -502,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595532656086</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="add deploy version">
+      <created>1595588327139</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1595588327139</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +560,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="fix typography" />
     <MESSAGE value="add modal + bsh-hover()" />
     <MESSAGE value="add mixin font()" />
     <MESSAGE value="add templates style + js" />
@@ -565,13 +584,14 @@
     <MESSAGE value="add page village + village-item" />
     <MESSAGE value="add all page" />
     <MESSAGE value="add mobile version" />
-    <option name="LAST_COMMIT_MESSAGE" value="add mobile version" />
+    <MESSAGE value="add deploy version" />
+    <option name="LAST_COMMIT_MESSAGE" value="add deploy version" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1753" y="-103" key="CommitChangelistDialog2" timestamp="1595532645340">
+    <state x="-1753" y="-103" key="CommitChangelistDialog2" timestamp="1595588315579">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-1753" y="-103" key="CommitChangelistDialog2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1595435925873" />
+    <state x="-1753" y="-103" key="CommitChangelistDialog2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1595588315579" />
     <state x="-1753" y="-103" key="CommitChangelistDialog2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1595532645340" />
     <state x="-1500" y="199" key="FileChooserDialogImpl" timestamp="1594400924243">
       <screen x="-2560" y="-256" width="2560" height="1400" />
@@ -595,10 +615,10 @@
     <state x="-1779" y="87" width="998" height="908" key="SettingsEditor/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1595426558316" />
     <state x="-1779" y="87" key="SettingsEditor/-2560.-256.2560.1400/1920.166.1280.984/0.0.1920.1040@-2560.-256.2560.1400" timestamp="1594152820495" />
     <state x="-1779" y="87" key="SettingsEditor/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1595508309046" />
-    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2" timestamp="1595532660541">
+    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2" timestamp="1595588332627">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1595435937546" />
+    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1595588332627" />
     <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1595532660541" />
     <state x="-1566" y="181" width="571" height="526" key="find.popup" timestamp="1595585655444">
       <screen x="-2560" y="-256" width="2560" height="1400" />
@@ -609,10 +629,10 @@
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
     <state width="600" height="440" key="javadoc.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1595414912738" />
-    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1595582114675">
+    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1595863526889">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
     <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1595582114675" />
-    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1595532028118" />
+    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1595863526889" />
   </component>
 </project>

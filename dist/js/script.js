@@ -319,4 +319,15 @@ $(document).ready(function () {
 		$(this).closest(".tab-cont").find('.tab-cont-content').slideToggle();
 	});
 	// toggle mobile tabs === end
+
+	// paralax
+	if($(window).width() > 1650 && $(".content-paralax").length>0) {
+		var image = document.getElementsByClassName('thumbnail');
+		new simpleParallax(image, {
+			overflow: true,
+			scale: 2
+		});
+	}
+	// paralax === end
+
 });

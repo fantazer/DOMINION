@@ -24,7 +24,9 @@ include block_html/_include.pug
 						.slider-banner__title Новый план застройки
 						.slider-banner__text идеальное место для тех, кто хочет жить рядом с городом, вдали от суеты, имея возможность быстро добраться до него в любой момент
 						a(href="https://youtu.be/t8VcBdgGNco").btn--md.btn--mark.fancybox Смотреть видео
-	.content
+	.content.content-paralax
+		.paralax-el.paralax-el__1
+			img(src="img/deer-right.svg", alt="" class="thumbnail")
 		.main-cont
 			.title.title--lg Наши посёлки
 			//items slider
@@ -95,7 +97,9 @@ include block_html/_include.pug
 		+order()
 
 		// garant
-		.fluid-cont.section
+		.fluid-cont.section.content-paralax
+			.paralax-el.paralax-el__2
+				img(src="img/deer-left.svg", alt="" class="thumbnail")
 			.fluid-cont-el
 				.map
 					.map__el(style="background-image:url('img/map.jpg')")

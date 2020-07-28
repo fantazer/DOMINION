@@ -19,62 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add deploy version">
-      <change afterPath="$PROJECT_DIR$/app/img/deer-left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/deer-right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/js/simpleParallax.min.js" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add parallax effect">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/error-500.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_script.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_script.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/error-404.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/error-500.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/item.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/item.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/project.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/project.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/vilage-item.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/vilage-item.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/elements.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/elements.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/error-404.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/error-404.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/error-500.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/error-500.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/index.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/index.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/item.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/item.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/project.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/project.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/vilage-item.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/vilage-item.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/vilage.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/vilage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/payment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vilage-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/vilage-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vilage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/vilage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/elements.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/elements.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/error-404.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/error-404.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/error-500.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/error-500.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/index.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/index.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/item.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/item.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/project.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/project.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/vilage-item.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/vilage-item.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/vilage.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/vilage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/combined.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/combined.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/vilage-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/vilage-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +158,8 @@
       <workItem from="1595410480826" duration="19321000" />
       <workItem from="1595505033490" duration="23267000" />
       <workItem from="1595579743890" duration="6445000" />
-      <workItem from="1595853491623" duration="5107000" />
+      <workItem from="1595853491623" duration="5810000" />
+      <workItem from="1595928008032" duration="630000" />
     </task>
     <task id="LOCAL-00001" summary="fix browsersynk">
       <created>1515935102048</created>
@@ -522,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595588327139</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="add parallax effect">
+      <created>1595863993847</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1595863993847</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +514,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add modal + bsh-hover()" />
     <MESSAGE value="add mixin font()" />
     <MESSAGE value="add templates style + js" />
     <MESSAGE value="add icon + fix readme + add modal page" />
@@ -585,14 +538,15 @@
     <MESSAGE value="add all page" />
     <MESSAGE value="add mobile version" />
     <MESSAGE value="add deploy version" />
-    <option name="LAST_COMMIT_MESSAGE" value="add deploy version" />
+    <MESSAGE value="add parallax effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="add parallax effect" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1753" y="-103" key="CommitChangelistDialog2" timestamp="1595588315579">
+    <state x="-1753" y="-103" key="CommitChangelistDialog2" timestamp="1595863982595">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
     <state x="-1753" y="-103" key="CommitChangelistDialog2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1595588315579" />
-    <state x="-1753" y="-103" key="CommitChangelistDialog2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1595532645340" />
+    <state x="-1753" y="-103" key="CommitChangelistDialog2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1595863982595" />
     <state x="-1500" y="199" key="FileChooserDialogImpl" timestamp="1594400924243">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
@@ -615,11 +569,11 @@
     <state x="-1779" y="87" width="998" height="908" key="SettingsEditor/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1595426558316" />
     <state x="-1779" y="87" key="SettingsEditor/-2560.-256.2560.1400/1920.166.1280.984/0.0.1920.1040@-2560.-256.2560.1400" timestamp="1594152820495" />
     <state x="-1779" y="87" key="SettingsEditor/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1595508309046" />
-    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2" timestamp="1595588332627">
+    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2" timestamp="1595864006481">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
     <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1595588332627" />
-    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1595532660541" />
+    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1595864006481" />
     <state x="-1566" y="181" width="571" height="526" key="find.popup" timestamp="1595585655444">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
